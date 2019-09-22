@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Delete</th>
+    </thead>
+    <tbody *ngFor="let message of adminMessage; let i = index">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{message.name}}</td>
+            <td>{{message.email}}</td>
+            <td>{{message.message}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteMessage(message)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

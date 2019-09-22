@@ -1,0 +1,57 @@
+<form>
+    <div class="form-group">
+        <label for="newArrivals">New Arrivals</label>
+        <textarea [(ngModel)]="newArrivals" name="newArrivals" class="form-control" id="newArrivals"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="aboutStoryOne">Our story</label>
+        <textarea [(ngModel)]="aboutStoryOne" name="aboutStoryOne" class="form-control" id="aboutStoryOne"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="aboutStoryTwo">Our story</label>
+        <textarea [(ngModel)]="aboutStoryTwo" name="aboutStoryTwo" class="form-control" id="aboutStoryTwo"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="aboutTeam">About(awesome team)</label>
+        <textarea [(ngModel)]="aboutTeam" name="aboutTeam" class="form-control" id="aboutTeam"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="contactTeam">Contact(awesome team)</label>
+        <textarea [(ngModel)]="contactTeam" name="contactTeam" class="form-control" id="contactTeam"></textarea>
+    </div>
+    <button *ngIf="!editStatus" type="button" class="btn btn-success btn-block" (click)="isAddText()">Add</button>
+    <button *ngIf="editStatus" type="button" class="btn btn-success btn-block" (click)="isSaveEditText()">Save
+        edit</button>
+
+</form>
+
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>New Arrivals</th>
+        <th>About Our story(part I)</th>
+        <th>About Our story(part II)</th>
+        <th>About awesome team</th>
+        <th>Contact(awesome team)</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of adminText ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.newArrivals}}</td>
+            <td>{{item.aboutStoryOne}}</td>
+            <td>{{item.aboutStoryTwo}}</td>
+            <td>{{item.aboutTeam}}</td>
+            <td>{{item.contactTeam}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditText(item)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteText(item)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row" [ngClass]="{'footer': true}">
+        <div class="col" [ngClass]="{'block1': true}">
+            <a class="navbar-brand" href="#"><span [ngClass]="{'bigLogoText': true}">SH</span>
+                <img src="/assets/big-header.images/orange-fone.png" width="34" height="17" alt=""
+                    [ngClass]="{'redLogoImg': true}">
+                <img src="/assets/big-header.images/white-detail.png" width="20" height="13" alt=""
+                    [ngClass]="{'whiteLogoImg': true}">
+                <span style="margin-left: -20px;" [ngClass]="{'bigLogoText': true}">PY</span>
+                <br>
+                <p [ngClass]="{'smallLogoText': true}">shop any where</p>
+                <p [ngClass]="{'shopyFooterText': true}">shopy c 2015 . your copy right here</p>
+            </a>
+        </div>
+        <div class="col " [ngClass]="{'footerMenuList': true}">
+            <div class="row " [ngClass]="{'menuList': true}">
+                <div class="col ul">
+                    <ul type="disc">
+                        <li [ngClass]="{'footMenu': true}" routerLink="about"><a>about us</a></li>
+                        <li [ngClass]="{'footMenu': true}" routerLink="contact"><a>contact us</a></li>
+                        <li [ngClass]="{'footMenu': true}"><a>support</a></li>
+                    </ul>
+                </div>
+                <div class="col ul">
+                    <ul type="disc">
+                        <li [ngClass]="{'footMenu': true}"><a>our feed</a></li>
+                        <li [ngClass]="{'footMenu': true}"><a>terms and conditions</a></li>
+                        <li [ngClass]="{'footMenu': true}"><a>our privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col ul" [ngClass]="{'lastFooterList': true}">
+                    <ul type="disc">
+                        <li [ngClass]="{'footMenu': true}"><a>join us</a></li>
+                        <li [ngClass]="{'footMenu': true}"><a>live support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col" [ngClass]="{'block2': true}">
+            <div [ngClass]="{'paymentMethods': true}"> Payment Methods</div>
+            <img src="/assets/footer.images/Payment_Images.png" alt="" [ngClass]="{'pay': true}">
+        </div>
+    </div>
+
+</div>

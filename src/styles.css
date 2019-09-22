@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@font-face{
+    font-family: 'Harmonia';
+    src:url(assets/fonts/HarmoniaSansProCyr-Regular.otf)
+} 
+@font-face{
+    font-family: 'Titillium';
+    src:url(assets/fonts/TitilliumText22L006.otf)
+} 
+@font-face{
+    font-family: 'HarmoniaSansProCyr-SemiBd';
+    src:url(assets/fonts/HarmoniaSansProCyr-SemiBd.otf)
+} 
+body{
+    background-color: #f4f6f8;
+}
+p{
+    margin: 0;
+    padding: 0
+}
+a{
+    cursor: pointer;
+}

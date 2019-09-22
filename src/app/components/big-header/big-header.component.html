@@ -1,0 +1,179 @@
+<div class="container-fluid">
+    <div class="smallContainer">
+        <nav class="navbar navbar-expand-lg navbar-light" [ngClass]="{'logo': true}">
+            <a class="navbar-brand" href="#" ng class="logo"><span [ngClass]="{'bigLogoText': true}">SH</span>
+                <img src="/assets/big-header.images/orange-fone.png" width="34" height="17" alt=""
+                    [ngClass]="{'redLogoImg': true}">
+                <img src="/assets/big-header.images/white-detail.png" width="20" height="13" alt=""
+                    [ngClass]="{'whiteLogoImg': true}">
+                <span style="margin-left: -20px;" [ngClass]="{'bigLogoText': true}">PY</span>
+                <br>
+                <p [ngClass]="{'smallLogoText': true}">shop any where</p>
+            </a>
+
+            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" [ngClass]="{'menuText': true}">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="contact">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" routerLinkActive="active" routerLink="admin">Admin</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" ng class="formAction">
+
+                    <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}">
+                        <img src="/assets/big-header.images/User_Ico.png" width="19" height="17" alt=""
+                            data-toggle="modal" data-target="#exampleModal">
+                    </div>
+                    <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}" [ngClass]="{'cart': true}">
+                        <img src="/assets/big-header.images/Cart_Ico.png" [ngClass]="{'icon': true}" width="19"
+                            height="17" alt="" routerLinkActive="active" routerLink="basket">
+                        <p *ngIf="cart" [ngClass]="{'itemsCount': true}">{{this.productAddToCart.length}}</p>
+
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <form class="form-signin" id="form1" name="form1" #myForm="ngForm" novalidate>
+                                <label for="email" style="font-size:30px">Please Sign up</label>
+
+                                <div class="form-label-group">
+                                    <input type="text" id="userFirstName" name="userFirstName"
+                                        [(ngModel)]="userFirstName" class="form-control first " placeholder="First name"
+                                        required pattern="^[a-zA-Zа-яА-Я]+$">
+                                    <label for="userFirstName">First name</label>
+                                </div>
+                                <div class="form-label-group">
+                                    <input type="text" id="userLastName" name="userLastName" [(ngModel)]="userLastName"
+                                        class="form-control first" placeholder="Last name" required
+                                        pattern="^[a-zA-Zа-яА-Я]+$">
+                                    <label for="userLastName">Last name</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="text" id="userEmail" name="userEmail" [(ngModel)]="userEmail"
+                                        class="form-control first" placeholder="Email address" required
+                                        pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+                                    <label for="userEmail">Email address</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="userPass" name="userPass" [(ngModel)]="userPass"
+                                        class="form-control first" placeholder="Password" required
+                                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$">
+                                    <label for="userPass">Password</label>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-block" type="button"
+                                            (click)="AddRegistration(myForm);" [disabled]="myForm.invalid">Sign
+                                            Up</button>
+                                    </div>
+                                </div>
+                                <input type="button" name="in" id="in" value="Sign in now" (click)="signUpClose()">
+
+                            </form>
+
+
+
+                            <form class="form-signin" id="form2" #myForm2="ngForm">
+                                <label for="email" style="font-size:30px">Please Sign in</label>
+
+                                <div class="form-label-group">
+                                    <input type="text" id="userEmail2" name="userEmail2" [(ngModel)]="userEmail2"
+                                        class="form-control" placeholder="Email address"
+                                        pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                                    <label for="userEmail2">Email address</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="userPass2" name="userPass2" [(ngModel)]="userPass2"
+                                        class="form-control" placeholder="Password"
+                                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$" required>
+                                    <label for="userPass2">Password</label>
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <button class="btn btn-success btn-block" type="button"
+                                            (click)="AddLogin(myForm2)">Sign
+                                            In</button>
+                                    </div>
+                                </div>
+                                <input type="button" id="up" name="up" value="Sign up now" (click)="signInClose()">
+
+                            </form>
+
+                            <form action="" class="f2" name="f2" id="form3">
+                                <div class="cover">
+                                    <img src="assets/login.image/man.png" alt=""
+                                        style="width:100px; height: 100px;margin-top: 20px;">
+                                    <p class="one" id="one"><b>////</b></p>
+                                    <p class="two" id="two">v,dnvm,</p>
+                                    <button type="button" class="btn btn-success btn-block" name="button"
+                                        style="margin-top: 82px" id="up2" (click)="returnToStart()">Sign Up</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="pos-f-t" [ngClass]="{'sandwitch': true}">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-light p-4">
+                    <a class="text" routerLink="home">Home</a><br>
+                    <a class="text" routerLink="products">Products</a><br>
+                    <a class="text" routerLink="about">About</a><br>
+                    <a class="text" routerLink="contact">Contact</a><br>
+                    <a class="text" routerLinkActive="active" routerLink="admin">Admin</a><br>
+                </div>
+            </div>
+            <nav class="navbar navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="form-inline my-2 my-lg-0" ng class="formAction">
+
+                    <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}">
+                        <img src="/assets/big-header.images/User_Ico.png" width="19" height="17" alt=""
+                            routerLinkActive="active" routerLink="login">
+                    </div>
+                    <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}" [ngClass]="{'cart': true}">
+                        <img src="/assets/big-header.images/Cart_Ico.png" [ngClass]="{'icon': true}" width="19"
+                            height="17" alt="" routerLinkActive="active" routerLink="basket">
+                        <p *ngIf="cart" [ngClass]="{'itemsCount': true}">{{this.productAddToCart.length}}</p>
+
+                    </div>
+                </form>
+            </nav>
+
+
+        </div>
+    </div>
+</div>

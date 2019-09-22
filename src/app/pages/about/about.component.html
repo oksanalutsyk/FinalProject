@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <div [ngClass]="{'ourStory': true}">
+        <div class="col">
+            <img src="/assets/about.images/shutterstock_295137809.png" alt="" [ngClass]="{'ourStoryImage': true}">
+        </div>
+        <div class="col">
+            <div class="col">
+                <div [ngClass]="{'our': true}">Our Story</div>
+                <div [ngClass]="{'ourText': true}" *ngFor="let item of adminText">{{item.aboutStoryOne}}</div>
+                <div [ngClass]="{'ourText': true}" *ngFor="let item of adminText">{{item.aboutStoryTwo}}</div>
+                <div [ngClass]="{'our': true}">Our Skills</div>
+
+                <div [ngClass]="{'progressbar': true}">
+
+                    <div [ngClass]="{'progressbarPart': true}">
+                        <p>Dynamics of audience growth</p>
+                        <p [ngClass]="{'progressLine': true}">
+                            <ngb-progressbar showValue="true" type="secondary" *ngFor="let item of adminAbout" [value]="item.oldPersentOne">
+                            </ngb-progressbar>
+                        </p>
+                        <p>
+                            <ngb-progressbar [showValue]="true" type="warning" *ngFor="let item of adminAbout"  [value]="item.newPersentOne">
+                            </ngb-progressbar>
+                        </p>
+                    </div>
+
+                    <div [ngClass]="{'progressbarPart': true}">
+                        <p>Dynamics of sale</p>
+                        <p [ngClass]="{'progressLine': true}">
+                            <ngb-progressbar showValue="true" type="secondary" *ngFor="let item of adminAbout" [value]="item.oldPersentTwo">
+                            </ngb-progressbar>
+                        </p>
+                        <p>
+                            <ngb-progressbar [showValue]="true" type="warning" *ngFor="let item of adminAbout"  [value]="item.newPersentTwo">
+                            </ngb-progressbar>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div [ngClass]="{'awesomeTeam': true}">
+        <div [ngClass]="{'colon': true}">
+            <div class="col" [ngClass]="{'awesome': true}"><span [ngClass]="{'orangeAwesome': true}">Awesome</span>
+                Team</div>
+
+            <div class="col" [ngClass]="{'awesomeLorem': true}" *ngFor="let item of adminText">{{item.contactTeam}}
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div [ngClass]="{'aboutFotos': true}">
+
+        <div class="col" [ngClass]="{'foto': true}">
+            <div class="col" [ngClass]="{'foto1': true}"></div>
+            <div class="col" [ngClass]="{'fotoInf': true}">
+                <div class="col"><a href="#" [ngClass]="{'name': true}">Lian Joy</a></div>
+                <div class="col" [ngClass]="{'proffesion': true}">CEO/Founder</div>
+                <div class="col" [ngClass]="{'description': true}">Lorem ipsum dolor sit amet, conse ctetuer adipi
+                    scing elit, sed diam nonu mmy nibh
+                    euis mod tinci </div>
+            </div>
+        </div>
+
+        <div class="col" [ngClass]="{'foto': true}">
+            <div class="col" [ngClass]="{'foto2': true}"></div>
+            <div class="col" [ngClass]="{'fotoInf': true}">
+                <div class="col"><a href="#" [ngClass]="{'name': true}">Albert Thanh</a> </div>
+                <div class="col" [ngClass]="{'proffesion': true}">CEO/Founder</div>
+                <div class="col" [ngClass]="{'description': true}">Lorem ipsum dolor sit amet, conse ctetuer adipi
+                    scing elit, sed diam nonu mmy nibh
+                    euis mod tinci </div>
+            </div>
+        </div>
+
+        <div class="col" [ngClass]="{'foto': true}">
+            <div class="col" [ngClass]="{'foto3': true}"></div>
+            <div class="col" [ngClass]="{'fotoInf': true}">
+                <div class="col"><a href="#" [ngClass]="{'name': true}">Jenn Pereira</a></div>
+                <div class="col" [ngClass]="{'proffesion': true}">CEO/Founder</div>
+                <div class="col" [ngClass]="{'description': true}">Lorem ipsum dolor sit amet, conse ctetuer adipi
+                    scing elit, sed diam nonu mmy nibh
+                    euis mod tinci </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

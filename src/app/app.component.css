@@ -1,0 +1,18 @@
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+  }
+  img{
+      border-radius: 50%;
+      /* color: #ff5912; */
+      background-color: lightgray;
+      padding: 10px
+  }
+  img:hover{
+      background-color: transparent
+  }

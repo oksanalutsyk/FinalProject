@@ -1,0 +1,119 @@
+<form>
+    <div class="form-group">
+        <label for="productCategory">Product category</label>
+        <select [(ngModel)]="productCategory" name="productCategory" class="form-control form-control-sm">
+            <option *ngFor="let category of adminCategory ; let i=index" [ngValue]="category">{{category.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="productCategory">Product brend</label>
+        <select [(ngModel)]="productBrend" name="productBrend" class="form-control form-control-sm">
+            <option *ngFor="let brend of adminBrend ; let i=index" [ngValue]="brend">{{brend.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="productName">Product name</label>
+        <input [(ngModel)]="productName" name="productName" type="text" class="form-control" id="productName">
+    </div>
+    <div class="form-group">
+        <label for="productDescription">Product description</label>
+        <textarea [(ngModel)]="productDescription" name="productDescription" class="form-control"
+            id="productDescription"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="productPrice">Product price</label>
+        <input [(ngModel)]="productPrice" name="productPrice" type="number" class="form-control" id="productPrice">
+    </div>
+    <div class="form-group">
+        <label for="productColor">Product color</label>
+        <form action="">
+            <label for="" *ngFor="let color of adminColor ; let i=index">
+                <input type="checkbox" [(ngModel)]="color.status" [name]="color.name">
+                <span>{{color.name}}</span>
+            </label>
+        </form>
+    </div>
+    <div class="form-group">
+        <label for="productSize">Product size</label>
+        <form action="">
+            <label for="" *ngFor="let size of adminSize ; let i=index">
+                <input type="checkbox" [(ngModel)]="size.status" [name]="size.name">
+                <span>{{size.name}}</span>
+            </label>
+        </form>
+    </div>
+    <div class="form-group">
+        <div class="custom-file">
+            <input (change)="upload($event)" accept=".png,.jpj,.jpeg" type="file" class="custom-file-input"
+                id="productFile" required>
+            <label class="custom-file-label" for="productFile">Choose file...</label>
+        </div>
+        <div class="progress mt-2">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                [style.width]="(uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div *ngIf="downloadURL | async; let downloadSrc" class="alert alert-info" role="alert">
+            File uploaded: <a [href]="downloadSrc">{{downloadSrc}}</a>
+        </div>
+        <div class="btn-group" role="group" *ngIf="uploadState | async; let state">
+            <button type="button" class="btn btn-primary" (click)="task.pause()"
+                [disabled]="state === 'paused'">Pause</button>
+            <button type="button" class="btn btn-primary" (click)="task.cancel()"
+                [disabled]="!(state === 'paused' || state === 'running')">Cancel</button>
+            <button type="button" class="btn btn-primary" (click)="task.resume()"
+                [disabled]="state === 'running'">Resume</button>
+        </div>
+    </div>
+    <div class="form-group" *ngIf="image">
+        <img [src]="image" class="img-fluid" alt="Responsive image">
+    </div>
+    <button *ngIf="!editStatus" (click)="isAddProduct()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditProduct()" type="button" class="btn btn-success btn-block">Save
+        edit</button>
+</form>
+
+<hr>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Category</th>
+        <th>Brend</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of adminProducts ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.category.name}}</td>
+            <td>{{product.brend.name}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}}</td>
+            <td>
+                <div *ngFor="let color of product.color ; let i=index">
+                    {{color.name}}
+                </div>
+            </td>
+            <td>
+                <div *ngFor="let size of product.size ; let i=index">
+                    {{size.name}}
+                </div>
+            </td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditProduct(product)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteProduct(product)">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

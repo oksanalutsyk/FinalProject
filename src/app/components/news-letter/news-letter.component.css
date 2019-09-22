@@ -1,0 +1,123 @@
+.container-fluid {
+    background-color: #ffffff;
+    padding: 2% 3%;
+    max-width: 84%;
+    width: 70%;
+    margin: 5vw 6vw 5vw 15vw;
+    
+}
+.smallContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.newLeft, .newRight{
+    display: flex;
+    justify-content: space-around;
+    width: 50%
+}
+.newLeft{
+    flex-wrap: wrap
+}
+.letter{
+    display: flex;
+    align-items: center;
+    
+}
+.smHeaderIcon{
+    margin-right:2px;
+}
+.newsTitle{
+color: #ff5912;
+font-family: "Harmonia";
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+margin-top: -3px;
+}
+.joinUs{
+color: #34404b;
+font-family: "Harmonia";
+font-size: 14px;
+font-style: italic;
+text-align: center;
+}
+.typeEmail{
+color: #7c8791;
+font-family: "Harmonia";
+font-size: 14px;
+font-style: italic;
+}
+.btnJoinUs{
+    background-color: #ff5912;
+    font-size: 14px;
+    font-weight: 400;
+    width: 75px;
+    height: 45px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnJoinUsText{
+    color: #ffffff;
+    font-family: "HarmoniaSansProCyr-SemiBd";
+    
+}
+
+
+/* Modal */
+.form{
+    padding: 3vh 4vh;
+    color: #46505a;
+    font-family: "Harmonia";
+}
+.textarea{
+    margin-top: 3vh;
+}
+
+.btnSendMessText{
+    color: #ffffff;
+    background-color: #ff5912;
+    margin-top: 10px
+}
+input.ng-touched.ng-invalid {
+    border: solid red 2px;
+}
+
+input.ng-touched.ng-valid {
+    border: solid green 2px;
+}
+
+@media screen and (max-width:1020px){
+   .smallContainer{
+       display: block;
+       margin: auto
+   }
+   .newLeft, .newRight{
+       margin: auto
+   }
+   .newRight{
+       width: inherit;
+      display:flex;
+      justify-content: space-between;
+   }
+}
+
+@media screen and (max-width:768px){
+    .newRight{
+        display: block;
+    }
+    .btnJoinUs{
+        margin: auto
+    }
+    
+    .letter{
+        display: flex;
+        justify-content: center;
+        padding: 3px 0
+    }
+    
+}
+
+

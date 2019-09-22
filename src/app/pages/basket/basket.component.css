@@ -1,0 +1,157 @@
+.container-fluid{
+    background-color:  #f4f6f8;
+    min-height: 80vh;
+    max-width: 84%;
+    padding: 3vh 3vw;
+    width: 87%;
+    margin: 0 auto;
+}
+.secondTable{
+    display: none
+}
+.office{
+    min-height: 10vh;
+    border: 1px solid #e6e8eb;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 0
+}
+.officeInfo{
+    color: #ff5912;
+    font-family: "HarmoniaSansProCyr-SemiBd";
+    font-size: 35px;
+    letter-spacing: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2; 
+    text-align: center
+}
+.productDetailsForm{
+    display: flex;
+color: #34404b;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 20px;
+font-weight: 400;
+margin: 0 0 6vh 0;
+
+}
+.basketImg{
+    height: 100px;
+    width: 80px;
+    margin-right: 20%;
+
+}
+table{
+    color: #3c4751;
+    font-family: "Harmonia";
+    font-size: 20px
+}
+.thead{
+    font-size: 20px;
+
+}
+.count{
+    color:#ff5912;
+}
+.prodCount{
+    width: 41px;
+    text-align: center;
+}
+.table td, .table th {
+    vertical-align: baseline;
+}
+.name{
+font-weight: 600;
+
+}
+.totalTr{
+display: flex;
+color: #34404b;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 25px;
+font-weight: 400;
+}
+.total{
+    color:#ff5912;
+    margin: 0 1vw
+}
+.makeOrderButton{
+    background-color: #ff5912
+}
+.block2{
+    display: none
+}
+.thankThema{
+        color: #ff5912;
+        font-family: "HarmoniaSansProCyr-SemiBd";
+        font-size: 35px;
+        letter-spacing: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 2;
+        text-align: center;
+}
+.subText{
+        color: #3c4751;
+    font-family: "Harmonia";
+    font-size: 23px;
+    text-align: center
+}
+.back{
+    color: #3c4751;
+font-family: "Harmonia";
+font-size: 18px;
+text-decoration: underline;
+text-align: center
+}
+.back:hover{
+    color: #ff5912
+}
+
+.close {
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    color: red;
+    }
+    .close:hover {
+    opacity: 1;
+    }
+    .close:before, .close:after {
+    position: absolute;
+    left: 80%;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+    }
+    .close:before {
+    transform: rotate(45deg);
+    }
+    .close:after {
+    transform: rotate(-45deg);
+    }
+
+@media screen and (max-width:860px){
+    .prodName{
+        display: none
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        width: 62vw;
+    }
+    .table1{
+        display: none
+    }
+    .secondTable{
+        display: block
+    }
+    .name{
+        text-align: center
+    }
+    
+}

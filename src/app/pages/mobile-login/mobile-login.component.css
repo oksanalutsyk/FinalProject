@@ -1,0 +1,141 @@
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #777;
+}
+#forma1,#forma2,#forma3{
+    border: 1px solid #e6e8eb;
+    margin: 2vh auto;
+    color: #46505a;
+    font-family: "Harmonia";
+    width: 85%;    
+
+
+}
+#forma2 {
+    display: none;
+}
+.back{
+    width: 300px;
+    margin: 20px;
+
+}
+#forma3 {
+    border: 1px solid #e6e8eb;
+    margin: 2vh auto;
+    text-align: center;
+    display: none;
+    min-height: 20vh;
+}
+button{
+    background-color: #ff5912
+}
+img{
+    height: 150px;
+    margin: 20px 0 10px 0
+}
+#one2{
+    font-size: 30px;
+    margin: 5px
+}
+#in2,
+#up3 {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.one2 {
+    font-size: 40px;
+    font-weight: 600
+}
+
+.two2,
+.three2 {
+    font-size: 20px;
+    color: gray;
+    font-weight: 500
+}
+.formAction {
+    width: 100%;
+    max-width: 70px;
+    display: -webkit-box;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+}
+
+
+
+input.ng-touched.ng-invalid {
+    border: solid red 2px;
+}
+
+input.ng-touched.ng-valid {
+    border: solid green 2px;
+}
+

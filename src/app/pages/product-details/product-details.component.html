@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row" [ngClass]="{'productDet': true}">
+        <div class="col" [ngClass]="{'small': true}">
+            <img [src]="view?.image" class="img-fluid" alt="Responsive image" [ngClass]="{'mainImg': true}"
+                [routerLink]="['/products']">
+        </div>
+        <div class="col">
+            <div [ngClass]="{'detailName': true}">{{view?.name}}</div>
+            <div [ngClass]="{'detailCategoryName': true}">{{view?.category.name}}</div>
+            <div [ngClass]="{'detailDescription': true}">{{view?.description}}</div>
+            <div [ngClass]="{'productDetailsForm': true}">
+                <div [ngClass]="{'productDetailsChoise': true}">
+                    <div [ngClass]="{'productDetailsSize': true}">
+                        Choose size:
+                        <div *ngFor="let size of view?.size ; let i=index" [ngClass]="{'sizePadding': true}">
+                            -{{size.name}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div [ngClass]="{'productDetailsForm': true}">
+                <div>Choose color:</div>
+                <div class="color">
+                    <div *ngFor="let color of view?.color ; let i=index" [ngClass]="{'divColor': true}"
+                        [ngStyle]="{'backgroundColor': color.name}">
+                    </div>
+                </div>
+            </div>
+
+
+            <div [ngClass]="{'productDetailsForm': true}">
+                <div>Prise:{{view?.price}} $</div>
+                <div [ngClass]="{'productDetailsIcons': true}">
+                    <div [ngClass]="{'links': true}">
+                        <a href="">
+                            <img src="/assets/product-details.images/Share_Ico.png" alt="" width="19" height="17">
+                        </a>
+                        <a href="">
+                            <img src="/assets/product-details.images/Add_To_Cart_Ico.png" alt="" width="19" height="17">
+                        </a>
+                        <a href="">
+                            <img src="/assets/product-details.images/Like_Ico.png" alt="" width="19" height="17">
+                        </a>
+                    </div>
+                    <div>
+                        <button type="button" class="btn" [ngClass]="{'orderButton': true}" (click)="onAddCart(view)"
+                            (click)="refresh()">Order now</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>

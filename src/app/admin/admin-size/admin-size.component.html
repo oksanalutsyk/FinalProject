@@ -1,0 +1,35 @@
+<form>
+    <div class="form-group">
+        <label for="sizeName">Size</label>
+        <input [(ngModel)]="sizeName" name="sizeName" type="text" class="form-control" id="sizeName">
+    </div>
+    
+    <button *ngIf="!editStatus" (click)="isAddSize()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditSize()" type="button" class="btn btn-success btn-block">Save
+        edit</button>
+</form>
+
+
+<hr>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Size</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let size of adminSize ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{size.name}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditSize(size)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteSize(size)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" [ngClass]="{'office': true}">
+            <div class="col-">
+                <div class="col" [ngClass]="{'officeInfo': true}">Office Info</div>
+                <div class="col" [ngClass]="{'officeText': true}">People Behind the Success of our Company</div>
+                <hr>
+                <div class="col" [ngClass]="{'officeText': true}"><span [ngClass]="{'bold': true}">Office Hours:</span>
+                    Mon-Friday 8am - 10pm</div>
+                <div class="col" [ngClass]="{'officeText': true}"><span [ngClass]="{'bold': true}">Address:</span>
+                    Igbalangao, Bugasong, Antique</div>
+                <div class="col" [ngClass]="{'officeNumber': true}"><span [ngClass]="{'bold': true}">Tell:</span>
+                    123-456-7890 <br>
+                    <span [ngClass]="{'bold': true}">Fax:</span> 123-456-7890</div>
+            </div>
+            <form class="col" [ngClass]="{'form': true}" id="forma" name="forma" #myForm="ngForm" novalidate>
+                <div class="row">
+                    <div class="col">
+                        <label for="messageName"></label>
+                        <input type="text" class="form-control" placeholder="Name" [(ngModel)]="messageName"
+                            name="messageName" id="messageName" required pattern="^[a-zA-Zа-яА-Я]+$">
+                    </div>
+                    <div class="col">
+                        <label for="messageEmail"></label>
+                        <input type="email" class="form-control" placeholder="Email" [(ngModel)]="messageEmail"
+                            name="messageEmail" id="messageEmail" required
+                            pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+                    </div>
+                </div>
+                <div class="form-group textarea">
+                    <label for="messageText"></label>
+                    <textarea class="form-control" [(ngModel)]="messageText" name="messageText" rows="6"
+                        placeholder="Message"></textarea>
+                </div>
+                <button type="button" class="btn" [ngClass]="{'btnSendMessText': true}" (click)="isAddMessage(myForm)"
+                    [disabled]="myForm.invalid">SEND</button>
+
+            </form>
+        </div>
+
+        <div class="w-100"></div>
+        <div class="col map-responsive" [ngClass]="{'map': true}">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.454623105212!2d122.05581517749646!3d11.01131837459728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33afb6c3320008c7%3A0x75813c290473d18!2z0JjQs9Cx0LDQu9Cw0L3Qs9Cw0L4sIEJ1Z2Fzb25nLCDQlNGA0LXQstC90LjQuSwg0KTQuNC70LjQv9C_0LjQvdGL!5e0!3m2!1sru!2sua!4v1564096568687!5m2!1sru!2sua"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="w-100"></div>
+        <div class="col" [ngClass]="{'ourValues': true}">
+            <div class="col" [ngClass]="{'colon': true}">
+                <div class="col" [ngClass]="{'values': true}"><span [ngClass]="{'orangeValues': true}">Awesome</span>
+                    Team</div>
+
+                <div class="col" [ngClass]="{'valuesLorem': true}" *ngFor="let item of adminText">{{item.contactTeam}}</div>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col" [ngClass]="{'contactsFotos': true}">
+
+            <div class="col" [ngClass]="{'foto': true}">
+                <div class="col" [ngClass]="{'foto1': true}"></div>
+                <div class="col" [ngClass]="{'fotoInf': true}">
+                    <div class="col"><a href="#" [ngClass]="{'title': true}">Who We Are</a></div>
+                    <div class="col" [ngClass]="{'description': true}">Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. </div>
+                </div>
+            </div>
+
+            <div class="col" [ngClass]="{'foto': true}">
+                <div class="col" [ngClass]="{'foto2': true}"></div>
+                <div class="col" [ngClass]="{'fotoInf': true}">
+                    <div class="col"><a href="#" [ngClass]="{'title': true}">Our Vision</a></div>
+                    <div class="col" [ngClass]="{'description': true}">Typi non habent claritatem insitam; est usus
+                        legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" [ngClass]="{'foto': true}">
+                <div class="col" [ngClass]="{'foto3': true}"></div>
+                <div class="col" [ngClass]="{'fotoInf': true}">
+                    <div class="col"><a href="#" [ngClass]="{'title': true}">Our Mission</a></div>
+                    <div class="col" [ngClass]="{'description': true}">Duis autem vel eum iriure dolor in hendrerit in
+                        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                        eros et accumsan.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

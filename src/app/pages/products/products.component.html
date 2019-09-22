@@ -1,0 +1,107 @@
+<div class="container-fluid">
+    <div class="row justify-content-between main">
+        <div class=" filtres">
+            <div class="row align-items-center" [ngClass]="{'categories': true}">
+                <p [ngClass]="{'orangeText': true}">Categories</p>
+                <div>
+                    <label *ngFor="let category of adminCategory  let i=index" [ngClass]="{'checkbox': true}">
+                        <input type="checkbox" id="" value="" [(ngModel)]="category.selected">
+                        <span>{{category.name}}</span> <br>
+                    </label>
+
+                </div>
+            </div>
+            <div class="row align-items-center" [ngClass]="{'priceFilter': true}">
+                <p [ngClass]="{'orangeText': true}">Price filter</p>
+                <div class="custom-slider priceFilter">
+                    <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+                    <div class="priceForm">
+                        <div class="row align-items-center" [ngClass]="{'priceText': true}">From <input type="text"
+                                [ngClass]="{'priceInput': true}" [(ngModel)]="minValue" width="10px"></div>
+                        <div class="row align-items-center" [ngClass]="{'priceText': true}">To <input type="text"
+                                [ngClass]="{'priceInput': true}" [(ngModel)]="maxValue"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center" [ngClass]="{'sizes': true}">
+                <p [ngClass]="{'orangeText': true}">Sizes</p>
+                <div>
+                    <label *ngFor="let size of adminSize  let i=index" [ngClass]="{'checkbox': true}">
+                        <input type="checkbox" id="" value="" [(ngModel)]="size.selected">
+                        <span>{{size.name}}</span> <br>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row align-items-center" [ngClass]="{'brends': true}">
+                <p [ngClass]="{'orangeText': true}">Brends</p>
+                <div>
+                    <label *ngFor="let brend of adminBrend  let i=index" [ngClass]="{'checkbox': true}">
+                        <input type="checkbox" id="" value="" [(ngModel)]="brend.selected">
+                        <span>{{brend.name}}</span> <br>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+
+
+            <!-- Продукти -->
+            <div class="container">
+                <div class="bigBox">
+                    <div class="smallBlock"
+                        *ngFor="let product of products |selectPrice: minValue:maxValue |selectSize:selectedSizes |selectCategory:selectedCategories |selectBrend:selectedBrendes | paginate: { itemsPerPage: 9, currentPage: p }"
+                        [routerLink]="['/products', product.id]">
+                        <div class="block1">
+                            <img [src]="product.image" class="photo">
+                            <p class="name">{{product.name}}</p>
+                            <p class="price">{{product.price}}$</p>
+                        </div>
+                        <div class="block">
+                            <img [src]="product.image" class="photoHover">
+                            <p class="nameHover">{{product.name}}</p>
+                            <div class="sizeHover">Sizes:
+                                <div *ngFor="let size of product.size" [ngClass]="{'divSize': true}"> {{size.name}}
+                                </div>
+                            </div>
+                            <div class="sizeHover">Brend:
+                                <div [ngClass]="{'divSize': true}"> {{product.brend.name}}
+                                </div>
+                            </div>
+                            <div class="sizeHover">Category:
+                                <div [ngClass]="{'divSize': true}"> {{product.category.name}}
+                                </div>
+                            </div>
+                            <div [ngClass]="{'colorHover': true}">
+                                <div *ngFor="let color of product.color ; let i=index" [ngClass]="{'divColor': true}"
+                                    [ngStyle]="{'backgroundColor': color.name}">
+                                </div>
+                            </div>
+                            <div [ngClass]="{'productIcons': true}" class="col-4">
+                                <li [ngClass]="{'hoverIconsClolor': true}"><a href="">
+                                        <img src="/assets/product-details.images/Share_Ico.png" alt="" width="19"
+                                            height="17">
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="/assets/product-details.images/Add_To_Cart_Ico.png" alt="" width="19"
+                                            height="17">
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="/assets/product-details.images/Like_Ico.png" alt="" width="19"
+                                            height="17">
+                                    </a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 justify-content-center">
+                    <pagination-controls class="my-pagination" (pageChange)="p = $event" (click)="gotoTop() ">
+                    </pagination-controls>
+                </div>
+
+
+            </div>
+        </div>
+    </div>

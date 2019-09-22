@@ -1,0 +1,125 @@
+.container-fluid{
+    background-color:  #f4f6f8;
+    margin: 5vw 6vw 5vw 10vw;
+    min-height: 80vh;
+    max-width: 84%;
+    padding: 7vh 2vw;
+    
+}
+.detailName{
+color: #ff5912;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 52px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.detailCategoryName{
+color: #3c4751;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 18px;
+font-weight: 400;
+line-height: 29.97px;
+margin: 1vh 0 1vh 0;
+}
+.detailDescription{
+color: #495662;
+font-family: "Harmonia";
+font-size: 16px;
+font-weight: 400;
+line-height: 29.97px;
+margin: 2vh 0 6vh 0;
+}
+.productDetailsForm{
+    display: flex;
+    justify-content: space-between;
+color: #34404b;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 20px;
+font-weight: 400;
+margin: 0 0 6vh 0;
+
+}
+.productDetailsChoise{
+    display: flex;
+    justify-content: space-between;
+    color: #34404b;
+    font-family: "HarmoniaSansProCyr-SemiBd";
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+.productDetailsIcons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.mainImg{
+    width: 260px;
+    height: 375px;
+    margin-left: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+}
+.orderButton{
+        color: #ffffff;
+        font-family: "HarmoniaSansProCyr-SemiBd";
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #ff5912;
+        text-decoration: none;
+}
+.orderButton:hover{
+    background-color: #495662 
+}
+.color{
+    display: flex;
+    justify-content: end
+
+}
+.divColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin:0 5px
+}
+.productDetailsSize{
+    display: flex
+}
+.sizePadding{
+padding: 0 5px
+}
+.links{
+    width: 100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .links{
+        display: none
+    }
+    .productDetailsIcons{
+        justify-content: space-between
+    }
+}
+
+@media screen and (max-width:890px){
+.productDet{
+    display: block
+}
+.small{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.mainImg{
+    margin: 0
+}
+.detailName{
+font-size: 30px
+}
+}

@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div [ngClass]="{'smallContainer': true}">
+        <div [ngClass]="{'newLeft': true}">
+            <div [ngClass]="{'newsTitle': true}">NEWS LETTER</div>
+            <div [ngClass]="{'joinUs': true}">join us now to get all news and special offers</div>
+        </div>
+        <div [ngClass]="{'newRight': true}">
+            <div [ngClass]="{'letter': true}">
+                <img src="/assets/small-header.images/Mail_Ico.png" alt="" [ngClass]="{'smHeaderIcon':true }" width="17" height="13"
+                    data-toggle="modal" data-target="#exampleModal2">
+                <div [ngClass]="{'typeEmail': true}">type your email here</div>
+            </div>
+            <div [ngClass]="{'btnJoinUs': true}">
+                <a href="" [ngClass]="{'btnJoinUsText': true}"> join us</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form [ngClass]="{'form': true}" #myForm="ngForm" novalidate>
+                        <div>
+                            <label for="emailEmail"></label>
+                            <input type="email" class="form-control" placeholder="Email" [(ngModel)]="emailEmail"
+                                name="emailEmail" id="emailEmail" required
+                                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+
+                            <div>
+                                <button type="button" class="btn" [ngClass]="{'btnSendMessText': true}" (click)="isAddEmail(myForm)" [disabled]="myForm.invalid"
+                                    data-dismiss="modal">SEND</button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

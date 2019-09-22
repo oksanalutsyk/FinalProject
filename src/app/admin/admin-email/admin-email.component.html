@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Email</th>
+        <th>Delete</th>
+    </thead>
+    <tbody *ngFor="let email of adminEmail; let i = index">
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{email.email}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteEmail(email)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

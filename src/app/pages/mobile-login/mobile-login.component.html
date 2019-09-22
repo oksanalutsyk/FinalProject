@@ -1,0 +1,72 @@
+<form class="form-signin" id="forma1" name="forma1" #myForm="ngForm" novalidate>
+    <label for="email" style="font-size:30px">Please Sign up</label>
+
+    <div class="form-label-group">
+        <input type="text" name="userFirstName" [(ngModel)]="userFirstName" class="form-control first "
+            placeholder="First name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        <label for="userFirstName">First name</label>
+    </div>
+    <div class="form-label-group">
+        <input type="text" name="userLastName" [(ngModel)]="userLastName" class="form-control first"
+            placeholder="Last name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        <label for="userLastName">Last name</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" name="userEmail" [(ngModel)]="userEmail" class="form-control first"
+            placeholder="Email address" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+        <label for="userEmail">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" name="userPass" [(ngModel)]="userPass" class="form-control first" placeholder="Password"
+            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$">
+        <label for="userPass">Password</label>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <button class="btn btn-block" type="button" (click)="AddRegistration(myForm);"
+                [disabled]="myForm.invalid">Sign
+                Up</button>
+        </div>
+    </div>
+    <input type="button" name="in2" id="in2" value="Sign in now" (click)="signUpClose()">
+
+</form>
+
+
+
+<form class="form-signin" id="forma2" name="forma2" #myForm2="ngForm">
+    <label for="email" style="font-size:30px">Please Sign in</label>
+
+    <div class="form-label-group">
+        <input type="text" name="userEmail2" [(ngModel)]="userEmail2" class="form-control" placeholder="Email address"
+            pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+        <label for="userEmail2">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="password" name="userPass2" [(ngModel)]="userPass2" class="form-control" placeholder="Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$" required>
+        <label for="userPass2">Password</label>
+
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <button class="btn btn-block" type="button" (click)="AddLogin(myForm2)">Sign
+                In</button>
+        </div>
+    </div>
+    <input type="button" id="up3" name="up3" value="Sign up now" (click)="signInClose()">
+
+</form>
+
+<form action="" class="f2" name="forma3" id="forma3">
+    <div class="cover">
+        <img src="assets/login.image/man.png" alt="">
+        <p class="one" id="one2"><b>////</b></p>
+        <p class="two" id="two2">v,dnvm,</p>
+        <button type="button" class="btn back" name="button" id="up4" (click)="returnToStart()">Sign Up</button>
+    </div>
+
+</form>

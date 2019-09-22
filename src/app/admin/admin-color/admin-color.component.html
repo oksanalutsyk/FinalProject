@@ -1,0 +1,34 @@
+<form>
+    <div class="form-group">
+        <label for="colorName">Color name</label>
+        <input [(ngModel)]="colorName" name="colorName" type="text" class="form-control" id="colorName">
+    </div>
+
+    <button *ngIf="!editStatus" (click)="isAddColor()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditColor()" type="button" class="btn btn-success btn-block">Save
+        edit</button>
+</form>
+
+
+<hr>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Color</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let color of adminColor ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{color.name}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditColor(color)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteColor(color)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

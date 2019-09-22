@@ -1,0 +1,269 @@
+.container-fluid {
+    min-height: 15vh;
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e8eb;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.smallContainer {
+    width: 86%;
+    margin: auto;
+    padding-top: 3vh
+}
+
+.bigLogoText {
+    color: #34404b;
+    font-family: "Titillium";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 4px
+}
+
+.smallLogoText {
+    opacity: 0.8;
+    color: #46505a;
+    font-family: "Harmonia";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.50px;
+    width: 113px;
+    height: 11px;
+    position: relative;
+    top: -20px;
+}
+
+.menuText {
+    color: #34404b;
+    font-family: "Harmonia";
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 12%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff5912;
+}
+
+.redLogoImg {
+    position: relative;
+    left: 0px;
+    top: -7px;
+}
+
+.whiteLogoImg {
+    position: relative;
+    left: -27px;
+    top: -5px;
+}
+
+.logoIcons {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    padding-right: 3vw;
+}
+
+.menu {
+    justify-content: space-between
+}
+
+.logo {
+    padding-right: 0;
+    text-decoration: none;
+}
+
+
+/* Modal2 */
+
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #777;
+}
+
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .form-label-group>label {
+        display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+#form1,#form2,#form3{
+    color: #46505a;
+    font-family: "Harmonia";
+}
+#form2 {
+    display: none;
+}
+
+#form3 {
+    text-align: center;
+    display: none;
+    margin: auto;
+    background-color: white;
+}
+
+#in,
+#up {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.one {
+    font-size: 40px;
+    font-weight: 600
+}
+
+.two,
+.three {
+    font-size: 20px;
+    color: gray;
+    font-weight: 500
+}
+
+.help-block {
+    color: red
+}
+
+.formAction {
+    width: 100%;
+    max-width: 70px;
+    display: -webkit-box;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+}
+
+.cart {
+    position: relative;
+}
+
+.icon {
+    position: relative
+}
+
+.itemsCount {
+    height: 19px;
+    width: 19px;
+    border-radius: 68%;
+    background-color: #46505a;
+    color: #e6e8eb;
+    position: relative;
+    top: -19px;
+    right: 19px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+input.ng-touched.ng-invalid {
+    border: solid red 2px;
+}
+
+input.ng-touched.ng-valid {
+    border: solid green 2px;
+}
+
+.sandwitch {
+    display: none
+}
+
+
+@media screen and (max-width:1020px) {
+    .logo {
+        display: none
+    }
+    .sandwitch {
+        display: block
+    }
+    .formAction {
+        max-width: 1%;
+    }
+    .text-muted{
+        text-decoration: none
+    }
+    .text{
+        color: #34404b;
+        font-family: "Harmonia";
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .text:hover{
+        color: #ff5912;
+        text-decoration: none
+    }
+}

@@ -1,0 +1,115 @@
+<div class="container-fluid">
+        <div class="row block1">
+                <div class="col" [ngClass]="{'office': true}">
+                        <div class="col" [ngClass]="{'officeInfo': true}">Make an order</div>
+                </div>
+                <table class="table" [ngClass]="{'table1': true}">
+                        <thead [ngClass]="{'thead': true}">
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                                <th>Total</th>
+                                <th>Delete</th>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let view of productAddToCart; let i=index">
+                                        <td [ngClass]="{'name': true}" [routerLink]="['/products', view .id]">
+                                                <img [src]="view.image" [ngClass]="{'basketImg': true}" alt="">
+                                                {{view.name}}</td>
+                                        <td>{{view.price}} $</td>
+                                        <td>
+                                                <div [ngClass]="{'productDetailsForm': true}">
+                                                        <button class="btn btn-light count"
+                                                                (click)="onRemoveQuantity(view)"> - </button>
+                                                        <input type="text" [ngClass]="{'prodCount': true}"
+                                                                [(ngModel)]="view.quantity"
+                                                                (ngModelChange)="view.quantity=$event">
+                                                        <button class="btn btn-light count"
+                                                                (click)="onAddQuantity(view)"> +
+                                                        </button>
+                                                </div>
+                                        </td>
+                                        <td> {{view.quantity*view.price}} $</td>
+                                        <td>
+                                                <div [ngClass]="{'close': true}" (click)="deleteProduct(i)"
+                                                        (click)="refresh()"></div>
+                                        </td>
+
+                                </tr>
+                                <div [ngClass]="{'totalTr': true}">Total: <p [ngClass]="{'total': true}">
+                                                {{this.allTotal }}$</p>
+                                </div>
+
+                                <div style="display: flex">
+                                        <button class="btn " [ngClass]="{'makeOrderButton': true}"
+                                                (click)="deleteCart()">MAKE
+                                                AN
+                                                ORDER</button>
+                                </div>
+                        </tbody>
+                </table>
+        </div>
+
+
+
+
+
+
+
+        <!-- <div class="row block1"> -->
+
+                <table class="table" [ngClass]="{'secondTable': true}">
+                        <thead [ngClass]="{'thead': true}">
+                                <th></th>
+                                <th></th>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let view of productAddToCart; let i=index" [ngClass]="{'tr': true}">
+                                        <td [ngClass]="{'name': true}" [routerLink]="['/products', view .id]">
+                                                <img [src]="view.image" [ngClass]="{'basketImg': true}" alt="">
+                                                <p [ngClass]="{'prodName': true}">{{view.name}}</p>
+                                        </td>
+                                        <td>
+                                                <div [ngClass]="{'flex': true}">
+                                                        <div>{{view.price}} $</div>
+                                                        <div [ngClass]="{'productDetailsForm': true}">
+                                                                <button class="btn btn-light count"
+                                                                        (click)="onRemoveQuantity(view)"> -
+                                                                </button>
+                                                                <input type="text" [ngClass]="{'prodCount': true}"
+                                                                        [(ngModel)]="view.quantity"
+                                                                        (ngModelChange)="view.quantity=$event">
+                                                                <button class="btn btn-light count"
+                                                                        (click)="onAddQuantity(view)"> +
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                                <div [ngClass]="{'flex': true}">
+                                                        <div>Total: {{view.quantity*view.price}} $</div>
+                                                        <div [ngClass]="{'close': true}" (click)="deleteProduct(i)"
+                                                                (click)="refresh()"></div>
+                                                </div>
+                                        </td>
+                                </tr>
+                        </tbody>
+
+                        <div [ngClass]="{'totalTr': true}">Total: <p [ngClass]="{'total': true}">
+                                        {{this.allTotal }}$</p>
+                        </div>
+
+                        <div style="display: flex">
+                                <button class="btn " [ngClass]="{'makeOrderButton': true}" (click)="deleteCart()">MAKE
+                                        AN
+                                        ORDER</button>
+                        </div>
+                </table>
+        <!-- </div> -->
+
+        <div class="block2">
+                <div class="col" [ngClass]="{'office': true}">
+                        <div class="col" [ngClass]="{'officeInfo': true}">Thank you for your order</div>
+                </div>
+                <div class="subText">Your order has been placed and is being processed</div>
+                <div class="back" [routerLink]="['/home']">back to homepage</div>
+        </div>
+</div>

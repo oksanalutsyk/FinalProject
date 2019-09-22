@@ -1,0 +1,14 @@
+.container-fluid{
+    background-color:  #f4f6f8;
+    margin: 5vw 6vw 5vw 10vw;
+    min-height: 80vh;
+    max-width: 84%;
+    padding: 3vh 3vw;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ff5912;
+}
+a{
+    color: rgba(0,0,0,.9);
+}

@@ -1,0 +1,131 @@
+    .container-fluid {
+        padding: 10vh 3vw 4vh 5vw;
+        ;
+        background-color: #ffffff;
+        min-height: 15vh;
+        max-width: 85%;
+        margin-left: 10%;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .bigLogoText {
+        color: #34404b;
+        font-family: "Titillium";
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .smallLogoText {
+        opacity: 0.8;
+        color: #46505a;
+        font-family: "Harmonia";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1.50px;
+        width: 113px;
+        height: 11px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .redLogoImg {
+        position: relative;
+        left: 0px;
+        top: -7px;
+    }
+    
+    .whiteLogoImg {
+        position: relative;
+        left: -27px;
+        top: -5px;
+    }
+    
+    .shopyFooterText {
+        color: #28313b;
+        font-family: "Harmonia";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        position: relative;
+        top: -10px;
+    }
+    
+    .paymentMethods {
+        width: 129px;
+        height: 16px;
+        color: #ff5912;
+        font-family: "HarmoniaSansProCyr-SemiBd";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 2%;
+    }
+    
+    .footerMenuList {
+        color: #28313b;
+        font-family: "Harmonia";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    .lastFooterList {
+        margin-bottom: 5%;
+    }
+    
+    li {
+        cursor: pointer;
+    }
+    
+    .footMenu:hover {
+        color: #ff5912
+    }
+    
+    @media screen and (max-width:1020px) {
+        .footer{
+            display: block
+        }
+        .block1, .block2{
+            width: 100%;
+            margin: auto;
+            text-align: center
+
+        }
+        .smallLogoText{
+            left: 50px;
+        }
+         .menuList{
+            width: 100%;
+            margin-left: 14%;
+        } 
+         .footerMenuList{
+             display: flex
+         }
+         .paymentMethods{
+             margin:auto
+         }
+         .pay{
+             text-align: center;
+             margin-top: 5px
+         }
+    }
+
+
+    @media screen and (max-width:768px){
+        .menuList{
+         display: block;
+         padding-left: 20vw;
+        }
+        .ul{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:600px){
+        .menuList{
+         padding-left: 18vw;
+        }
+    }
+

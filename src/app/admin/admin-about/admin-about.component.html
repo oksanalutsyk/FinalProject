@@ -1,0 +1,49 @@
+<form>
+    <div class="form-group">
+        <label for="audienceOld">Dynamics of audience growth(old)</label>
+        <input [(ngModel)]="audienceOld" name="audienceOld" type="number" class="form-control" id="audienceOld">
+    </div>
+    <div class="form-group">
+        <label for="audienceNew">Dynamics of audience growth(new)</label>
+        <input [(ngModel)]="audienceNew" name="audienceNew" type="number" class="form-control" id="audienceNew">
+    </div>
+    <div class="form-group">
+        <label for="saleOld">Dynamics of sale(old)</label>
+        <input [(ngModel)]="saleOld" name="saleOld" type="number" class="form-control" id="saleOld">
+    </div>
+    <div class="form-group">
+        <label for="saleNew">Dynamics of sale(old)</label>
+        <input [(ngModel)]="saleNew" name="saleNew" type="number" class="form-control" id="saleNew">
+    </div>
+
+    <button *ngIf="!editStatus" type="button" class="btn btn-success btn-block" (click)="isAddAbout()">Add</button>
+    <button *ngIf="editStatus" type="button" class="btn btn-success btn-block" (click)="isSaveEditAbout()">Save
+        edit</button>
+</form>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Dynamics of audience growth(old)</th>
+        <th>Dynamics of audience growth(new)</th>
+        <th>Dynamics of sale(old)</th>
+        <th>Dynamics of sale(old)</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of adminAbout ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.oldPersentOne}}</td>
+            <td>{{item.newPersentOne}}</td>
+            <td>{{item.oldPersentTwo}}</td>
+            <td>{{item.newPersentTwo}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditAbout(item)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteAbout(about)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

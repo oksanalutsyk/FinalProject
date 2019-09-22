@@ -1,0 +1,189 @@
+<div class="container-fluid">
+    <div [ngClass]="{'bigSlider': true}">
+        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+            <!-- Індикатори слайдів -->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- Слайди -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item ">
+                    <img src="/assets/home.photos/SliderImage.png" alt="k" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p [ngClass]="{'full': true}">FULL WINTER KIT</p>
+                        <p [ngClass]="{'half': true}">Half Jacket + Skiny Trousers + Boot leather</p>
+                        <p [ngClass]="{'lorem': true}">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</p>
+                        <div [ngClass]="{'price': true}">
+                            <p [ngClass]="{'dolar': true}">$120 : Price</p>
+                            <img src="/assets/big-header.images/Cart_Ico.png" alt="" height="16" width="20"
+                                [ngClass]="{'smImg': true}">
+                            <p [ngClass]="{'order': true}">Order Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/home.photos/SliderImage.png" alt="k" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p [ngClass]="{'full': true}">FULL WINTER KIT</p>
+                        <p [ngClass]="{'half': true}">Half Jacket + Skiny Trousers + Boot leather</p>
+                        <p [ngClass]="{'lorem': true}">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</p>
+                        <div [ngClass]="{'price': true}">
+                            <p [ngClass]="{'dolar': true}">$120 : Price</p>
+                            <img src="/assets/big-header.images/Cart_Ico.png" alt="" height="16" width="20"
+                                [ngClass]="{'smImg': true}">
+                            <p [ngClass]="{'order': true}">Order Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="/assets/home.photos/SliderImage.png" alt="k" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p [ngClass]="{'full': true}">FULL WINTER KIT</p>
+                        <p [ngClass]="{'half': true}">Half Jacket + Skiny Trousers + Boot leather</p>
+                        <p [ngClass]="{'lorem': true}">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</p>
+                        <div [ngClass]="{'price': true}">
+                            <p [ngClass]="{'dolar': true}">$120 : Price</p>
+                            <img src="/assets/big-header.images/Cart_Ico.png" alt="" height="16" width="20"
+                                [ngClass]="{'smImg': true}">
+                            <p [ngClass]="{'order': true}">Order Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div [ngClass]="{'someProductsSlider': true}">
+        <div [ngClass]="{'newArrivals': true}">
+            <p [ngClass]="{'new': true}"> <span [ngClass]="{'orangeNew': true}">NEW</span> ARRIVALS</p>
+            <!-- <p [ngClass]="{'loremText': true}">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p> -->
+            <p [ngClass]="{'loremText': true}" *ngFor="let item of adminText">{{item.newArrivals}}
+                </p>
+            
+        </div>
+
+
+        <!-- Carousel -->
+        <!-- #1 -->
+        <rotate-carousel height="100px" width="290px" depth="600px" period="2.5s" direction="forward"
+            [ngClass]="{'slider2': true}">
+            <ng-template rotateCarouselItem>
+                <div class="smallBlock" [routerLink]="['/products', img1.id]">
+
+                    <div class="block1">
+                        <img [src]="img1.image" class="photo">
+                        <p class="name">{{img1.name}}</p>
+                        <p class="price2">{{img1.price}}$</p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template rotateCarouselItem>
+                <div class="smallBlock" [routerLink]="['/products', img2.id]">
+
+                    <div class="block1">
+                        <img [src]="img2.image" class="photo">
+                        <p class="name">{{img2.name}}</p>
+                        <p class="price2">{{img2.price}}$</p>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template rotateCarouselItem>
+                <div class="smallBlock" [routerLink]="['/products', img3.id]">
+
+                    <div class="block1">
+                        <img [src]="img3.image" class="photo">
+                        <p class="name">{{img3.name}}</p>
+                        <p class="price2">{{img3.price}}$</p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template rotateCarouselItem>
+                <div class="smallBlock" [routerLink]="['/products', img4.id]">
+
+                    <div class="block1">
+                        <img [src]="img4.image" class="photo">
+                        <p class="name">{{img4.name}}</p>
+                        <p class="price2">{{img4.price}}$</p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template rotateCarouselItem>
+                <div class="smallBlock" [routerLink]="['/products', img5.id]">
+
+                    <div class="block1">
+                        <img [src]="img5.image" class="photo">
+                        <p class="name">{{img5.name}}</p>
+                        <p class="price2">{{img5.price}}$</p>
+                    </div>
+                </div>
+            </ng-template>
+
+        </rotate-carousel>
+
+        <!-- #2 -->
+        <div *ngIf='img5'>
+
+            <rotate-carousel height="100px" width="290px" depth="175px" period="2.5s" direction="reverse"
+                [ngClass]="{'slider3': true}">
+                <ng-template rotateCarouselItem>
+                    <div class="smallBlock" [routerLink]="['/products', img1.id]">
+
+                        <div class="block1">
+                            <img [src]="img1.image" class="photo">
+                            <p class="name">{{img1.name}}</p>
+                            <p class="price2">{{img1.price}}$</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template rotateCarouselItem>
+                    <div class="smallBlock" [routerLink]="['/products', img2.id]">
+
+                        <div class="block1">
+                            <img [src]="img2.image" class="photo">
+                            <p class="name">{{img2.name}}</p>
+                            <p class="price2">{{img2.price}}$</p>
+                        </div>
+                    </div>
+                </ng-template>
+
+                <ng-template rotateCarouselItem>
+                    <div class="smallBlock" [routerLink]="['/products', img3.id]">
+
+                        <div class="block1">
+                            <img [src]="img3.image" class="photo">
+                            <p class="name">{{img3.name}}</p>
+                            <p class="price2">{{img3.price}}$</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template rotateCarouselItem>
+                    <div class="smallBlock" [routerLink]="['/products', img4.id]">
+
+                        <div class="block1">
+                            <img [src]="img4.image" class="photo">
+                            <p class="name">{{img4.name}}</p>
+                            <p class="price2">{{img4.price}}$</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template rotateCarouselItem>
+                    <div class="smallBlock" [routerLink]="['/products', img5.id]">
+
+                        <div class="block1">
+                            <img [src]="img5.image" class="photo">
+                            <p class="name">{{img5.name}}</p>
+                            <p class="price2">{{img5.price}}$</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </rotate-carousel>
+        </div>
+    </div>
+</div>

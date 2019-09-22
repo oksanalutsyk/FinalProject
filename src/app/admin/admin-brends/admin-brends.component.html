@@ -1,0 +1,35 @@
+<form>
+    <div class="form-group">
+        <label for="brendName">Brend name</label>
+        <input [(ngModel)]="brendName" name="brendName" type="text" class="form-control" id="brendName">
+    </div>
+    
+    <button *ngIf="!editStatus" (click)="isAddBrend()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditBrend()" type="button" class="btn btn-success btn-block">Save
+        edit</button>
+</form>
+
+
+<hr>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Brend</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let brend of adminBrend ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{brend.name}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditBrend(brend)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteBrend(brend)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

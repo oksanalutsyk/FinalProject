@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div ngxUiLoaderBlurred>
+
+  <app-small-header></app-small-header>
+  <app-big-header></app-big-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-news-letter></app-news-letter>
+  <app-footer></app-footer>
+  <div *ngIf="isShow" (click)="gotoTop()" [ngClass]="{'toTop': true}">
+    <img src="/assets/arrow-up-solid.svg" alt="" width="40px" height="40px">
+    </div>
+</div>
+<ngx-ui-loader pbColor="#ff5912" fgsColor="#ff5912" fgsSize="80"></ngx-ui-loader>

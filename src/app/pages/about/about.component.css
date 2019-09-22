@@ -1,0 +1,129 @@
+.container-fluid{
+    background-color:  #f4f6f8;
+    min-height: 80vh;
+    max-width: 84%;
+    padding: 3vh 3vw;
+    width: 87%;
+    margin: 0 auto;
+
+}
+.ourStory{
+    min-height: 75vh;
+    border: 1px solid #e6e8eb;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.awesomeTeam{
+    min-height: 20vh;
+    border: 1px solid #e6e8eb;
+    margin: 2vh;
+}
+.aboutFotos{
+    min-height: 60vh;
+    border: 1px solid #e6e8eb;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+.ourStoryImage{
+    margin: 28px 0;
+    width: 100%;
+}
+.our{
+margin: 2vh 0;
+color: #ff5912;
+font-family: "HarmoniaSansProCyr-SemiBd";
+font-size: 18px;
+font-weight: 500;
+}
+.ourText{
+    color: #34404b;
+font-family: "Harmonia";
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+width: 100%;
+padding-bottom: 2vh;
+text-align: justify
+
+}
+.colon{
+    margin: auto;
+    text-align: center;
+
+}
+.awesome{
+    color: #34404b;
+    font-family: "HarmoniaSansProCyr-SemiBd";
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.awesomeLorem{
+    color: #495662;
+    font-family: "Harmonia";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: italic;
+}
+.orangeAwesome{
+    color: #ff5912;
+}
+.foto{
+    margin: 3vh 0;
+}
+.foto1,.foto2,.foto3{
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 3vh;
+}
+.foto1{
+    background-image: url(/assets/about.images/Saturation_1.png);
+}
+.foto2{
+    background-image: url(/assets/about.images/Saturation_1\ \(1\).png);
+}
+.foto3{
+    background-image: url(/assets/about.images/Saturation_1\ \(2\).png);
+}
+.name{
+    color: #ff5912;
+    font-family: "Harmonia";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.proffesion{
+    font-family: 'Harmonia';
+    font-size: 16px;
+    color: #5f6249;
+    font-weight: 700;
+}
+.description{
+    color: #34404b;
+    font-family: "Harmonia";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    padding-bottom: 3vh;
+}
+.progressbarPart{
+    padding: 2vh 0;
+}
+.progressLine{
+    padding: 1vh 0
+}
+
+
+
+@media screen and (max-width:1020px){
+    .ourStory, .aboutFotos{
+        display: block
+    }
+}
+
