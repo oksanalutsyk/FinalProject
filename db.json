@@ -1,0 +1,689 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "category": {
+        "id": 1,
+        "name": "Man"
+      },
+      "brend": {
+        "id": 1,
+        "name": "ZARA"
+      },
+      "name": "Signature by Levi Strauss & Co. Mens Skinny Fit Jeans",
+      "description": "Signature by Levi Strauss & Co.™ Men’s S26 Skinny Fit Jeans offer slim, on-trend style while providing all day comfort. Crafted from premium denim that flexes with you, these Skinny Jeans fit slim through the seat and thigh and are cut extra slim from knee to ankle. Quality you trust from Levi Strauss & Co., est. 1853. Signature by Levi Strauss & Co. \nCountry of Origin:  USA or Imported\n\n",
+      "price": 23,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "xs",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "l",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fxvynae50ye?alt=media&token=471da61c-6a2a-40af-afd9-3bf5ff9538a2"
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Time and Tru",
+      "description": "Material: Polyester \nFeatures: Pleated Sleeve, High Waist, Bohemian and Floral Print. \nDo not blench, hand wash separately in cold water and dry clean ",
+      "price": 45,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "m",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fgajjvd0iwef?alt=media&token=f8b5bae9-254b-48d3-971a-eb5ed6245ad6"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Women's Anorak Jacket",
+      "description": "Material: Polyester \nFeatures: Pleated Sleeve, High Waist, Bohemian and Floral Print. \nDo not blench, hand wash separately in cold water and dry clean ",
+      "price": 76,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "l",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F1o3nydmrsdc?alt=media&token=f31cb3fb-dade-413e-b645-8acd39db1ddf"
+    },
+    {
+      "id": 4,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "FloralPrint Boho Dress",
+      "description": "Season: Summer,Spring,Autumn Winter/span>\nMaterial: Polyester\nNeckline:Crew Neck\nOccasions:Casual,Holiday,Party,Cocktail",
+      "price": 34,
+      "color": [
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "xs",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F61c75q0dix6?alt=media&token=3307d3bb-24e6-438a-9e09-eb4f17d98ce3"
+    },
+    {
+      "id": 5,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 1,
+        "name": "ZARA"
+      },
+      "name": "Straight Stretch Twill Pant",
+      "description": "Relaxed Straight Stretch Twill Pant\nSits slightly below waist.\n\nCountry of Origin:  Nicaragua",
+      "price": 56,
+      "color": [
+        {
+          "id": 1,
+          "name": "green",
+          "status": false
+        },
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 4,
+          "name": "l",
+          "status": false
+        },
+        {
+          "id": 5,
+          "name": "xl",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F9g3hphr0u5?alt=media&token=2001d9d7-796a-40ed-9551-77fc7642fccb"
+    },
+    {
+      "id": 6,
+      "category": {
+        "id": 3,
+        "name": "Children"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Baby Girls' Solid Cam",
+      "description": "The two-piece sleeveless set includes a cami bodysuit featuring an elegant scalloped trim along the upper, and a peplum bodysuit accented with some cute ruffles.",
+      "price": 43,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "xs",
+          "status": false
+        },
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "m",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fleffnrslmwo?alt=media&token=e23587c5-9bf3-49d6-829a-038ea057eca8"
+    },
+    {
+      "id": 7,
+      "category": {
+        "id": 3,
+        "name": "Children"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Inverted zipper sleep n play ",
+      "description": " The inverted zipper and button coveralls make for easy night time diaper changes.",
+      "price": 45,
+      "color": [
+        {
+          "id": 1,
+          "name": "green",
+          "status": false
+        },
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "l",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F23vf8c1y3mu?alt=media&token=ae43ca11-3dbe-4356-a2cc-03b89a2570b7"
+    },
+    {
+      "id": 8,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Suspender Jumpsuit",
+      "description": "With the long, extended straps, this jumpsuit can be paired with a simple t-shit underneath to create a trendy outfit that will have everyone asking where you got it from!",
+      "price": 26,
+      "color": [
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "pink",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "xs",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "m",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F1vw62l45fnb?alt=media&token=32636b78-92ed-4565-9fa3-0234f561377f"
+    },
+    {
+      "id": 9,
+      "category": {
+        "id": 3,
+        "name": "Children"
+      },
+      "brend": {
+        "id": 1,
+        "name": "ZARA"
+      },
+      "name": "Print & Graphic Sweatshirts",
+      "description": "This cozy and stylish multipack includes two fleece sweatshirts and are lined with soft fleece to keep the coziness going all day long",
+      "price": 76,
+      "color": [
+        {
+          "id": 1,
+          "name": "green",
+          "status": false
+        },
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "pink",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "m",
+          "status": false
+        },
+        {
+          "id": 5,
+          "name": "xl",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fkq8l4irf7l?alt=media&token=4772bbfd-dcac-485b-aed9-6ec795b93116"
+    },
+    {
+      "id": 10,
+      "category": {
+        "id": 1,
+        "name": "Man"
+      },
+      "brend": {
+        "id": 3,
+        "name": "Puma"
+      },
+      "name": "Slim Straight Fit Jeans",
+      "description": "A versatile slim straight jean. Best for slim, athletic builds.",
+      "price": 34,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 5,
+          "name": "xl",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fb1shwhrbs5r?alt=media&token=6c79e05d-ece7-472c-b80a-e9fe2c57914d"
+    },
+    {
+      "id": 11,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 1,
+        "name": "ZARA"
+      },
+      "name": "Swing Midi Dress",
+      "description": "The dress has a lightly flared skirt that moves with you as you walk, and especially when you dance. ",
+      "price": 23,
+      "color": [
+        {
+          "id": 1,
+          "name": "green",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 3,
+          "name": "m",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F03xoaxtvyo63?alt=media&token=404eab92-5719-472b-96b4-4985a4567398"
+    },
+    {
+      "id": 12,
+      "category": {
+        "id": 2,
+        "name": "Woman"
+      },
+      "brend": {
+        "id": 3,
+        "name": "Puma"
+      },
+      "name": "Knit Jumpsuit",
+      "description": "This Time and Tru Jumpsuit will be a great addition to your wardrobe. ",
+      "price": 36,
+      "color": [
+        {
+          "id": 2,
+          "name": "red",
+          "status": false
+        },
+        {
+          "id": 4,
+          "name": "pink",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 2,
+          "name": "s",
+          "status": false
+        },
+        {
+          "id": 5,
+          "name": "xl",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fywbpxp34sq?alt=media&token=2a6061b2-c56a-4f17-8e61-19c62dac219f"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Man"
+    },
+    {
+      "id": 2,
+      "name": "Woman"
+    },
+    {
+      "id": 3,
+      "name": "Children"
+    }
+  ],
+  "color": [
+    {
+      "id": 1,
+      "name": "green",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "red",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "blue",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "pink",
+      "status": false
+    },
+    {
+      "id": 5,
+      "name": "orange",
+      "status": false
+    }
+  ],
+  "size": [
+    {
+      "id": 1,
+      "name": "xs",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "s",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "m",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "l",
+      "status": false
+    },
+    {
+      "id": 5,
+      "name": "xl",
+      "status": false
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "name": "Iryna",
+      "email": "iryna@ukr.net",
+      "message": "blablabla"
+    },
+    {
+      "id": 2,
+      "name": "Oksana",
+      "email": "oksanalutsyk@ukr.net",
+      "message": "Hallo)"
+    },
+    {
+      "id": 3,
+      "name": "Oksana",
+      "email": "oksanalutsyk@ukr.net",
+      "message": "Hallo)"
+    },
+    {
+      "id": 4,
+      "name": "Oksana",
+      "email": "oksanalutsyk@ukr.net",
+      "message": "Hallo)"
+    }
+  ],
+  "email": [
+    {
+      "id": 3,
+      "email": "oksanalutsyk@ukr.net"
+    },
+    {
+      "id": 4,
+      "email": "oksanalutsyk@ukr.net"
+    },
+    {
+      "id": 5,
+      "email": "oksanalutsyk@ukr.net"
+    },
+    {
+      "id": 6,
+      "email": "oksanalutsyk@ukr.net"
+    }
+  ],
+  "about": [
+    {
+      "id": 1,
+      "oldPersentOne": 39,
+      "newPersentOne": 75,
+      "oldPersentTwo": 65,
+      "newPersentTwo": 87
+    }
+  ],
+  "brend": [
+    {
+      "id": 1,
+      "name": "ZARA"
+    },
+    {
+      "id": 3,
+      "name": "Puma"
+    },
+    {
+      "id": 4,
+      "name": "NIKE"
+    }
+  ],
+  "registration": [
+    {
+      "id": 1,
+      "firstName": "WESDV",
+      "lastName": "f",
+      "login": "fEFDS@ukr.net",
+      "pass": "fEDSX32Q"
+    },
+    {
+      "id": 2,
+      "firstName": "Oksana",
+      "lastName": "Lutsyk",
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal1995K"
+    },
+    {
+      "id": 3,
+      "firstName": "Oksana",
+      "lastName": "Lutsyk",
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal1995K"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "login": "sed",
+      "pass": "lib"
+    },
+    {
+      "id": 2,
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal"
+    },
+    {
+      "id": 3,
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal1995K"
+    },
+    {
+      "id": 4,
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal1995B"
+    },
+    {
+      "id": 5,
+      "login": "oksanalutsyk@ukr.net",
+      "pass": "kinozal1995K"
+    }
+  ],
+  "text": [
+    {
+      "id": 1,
+      "newArrivals": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "aboutStoryOne": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad velit. Aperiam quod recusandae numquam aut qui quas est illo soluta sequi laboriosam autem commodi, ullam modi. Dolores perspiciatis explicabo beatae expedita aut, quo fugit esse eligendi sit vel sunt, aperiam magni distinctio nemo iusto. ",
+      "aboutStoryTwo": "Modi, voluptatum dignissimos nesciunt omnis totam enim itaque? Dolor, doloremque. Porro alias facilis veritatis sint voluptate assumenda ipsa dignissimos explicabo ab debitis incidunt, sit ullam provident, magni deserunt, illo velit maiores perferendis? Eos modi deleniti, distinctio quia error, debitis odio quo perferendis, explicabo reprehenderit quibusdam voluptatem ipsum sapiente facilis cumque!\n",
+      "aboutTeam": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad velit. Aperiam quod recusandae numquam aut qui quas est illo soluta sequi laboriosam autem commodi, ullam modi. ",
+      "contactTeam": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad velit. Aperiam quod recusandae numquam aut qui quas est illo soluta sequi laboriosam autem commodi, ullam modi. "
+    }
+  ]
+}
