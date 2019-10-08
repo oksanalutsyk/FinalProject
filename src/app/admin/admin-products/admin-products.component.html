@@ -68,8 +68,8 @@
     <div class="form-group" *ngIf="image">
         <img [src]="image" class="img-fluid" alt="Responsive image">
     </div>
-    <button *ngIf="!editStatus" (click)="isAddProduct()" type="button" class="btn btn-success btn-block">Add</button>
-    <button *ngIf="editStatus" (click)="isSaveEditProduct()" type="button" class="btn btn-success btn-block">Save
+    <button *ngIf="!editStatus" (click)="isAddPhoto()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditPhoto()" type="button" class="btn btn-success btn-block">Save
         edit</button>
 </form>
 

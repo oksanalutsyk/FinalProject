@@ -571,18 +571,6 @@
       "name": "Oksana",
       "email": "oksanalutsyk@ukr.net",
       "message": "Hallo)"
-    },
-    {
-      "id": 3,
-      "name": "Oksana",
-      "email": "oksanalutsyk@ukr.net",
-      "message": "Hallo)"
-    },
-    {
-      "id": 4,
-      "name": "Oksana",
-      "email": "oksanalutsyk@ukr.net",
-      "message": "Hallo)"
     }
   ],
   "email": [
@@ -685,5 +673,29 @@
       "aboutTeam": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad velit. Aperiam quod recusandae numquam aut qui quas est illo soluta sequi laboriosam autem commodi, ullam modi. ",
       "contactTeam": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ad velit. Aperiam quod recusandae numquam aut qui quas est illo soluta sequi laboriosam autem commodi, ullam modi. "
     }
+  ],
+  "firstHomeSlider": [
+    {
+      "id": 1,
+      "name": "wesdgvwesdv",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fmietsb7ozr?alt=media&token=84db6707-331b-46be-b5c7-ca2642c823ed"
+    },
+    {
+      "id": 2,
+      "name": "rrr",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fuuyfa7wxrs?alt=media&token=2b8b0f23-880e-461f-9ae5-cd349b61d419"
+    },
+    {
+      "id": 3,
+      "name": "sfg",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Ff04nqe6wpob?alt=media&token=d29c8680-b2ae-4702-9503-fa58480b050e"
+    },
+    {
+      "id": 4,
+      "name": "fdbf",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F4t3v0ke3nas?alt=media&token=91fb1fa8-bec5-4aa6-8a8d-c7c1be01f5b3"
+    }
+  
   ]
+  
 }

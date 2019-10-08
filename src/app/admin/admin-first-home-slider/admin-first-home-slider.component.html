@@ -1,0 +1,59 @@
+<form>
+    <div class="form-group">
+        <label for="firstHomeSliderName">Name</label>
+        <input [(ngModel)]="firstHomeSliderName" name="firstHomeSliderName" type="text" class="form-control" id="firstHomeSliderName">
+    </div>
+    <div class="form-group">
+        <div class="custom-file">
+            <input (change)="upload($event)" accept=".png,.jpj,.jpeg" type="file" class="custom-file-input"
+                id="productFile" required>
+            <label class="custom-file-label" for="productFile">Choose file...</label>
+        </div>
+        <div class="progress mt-2">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                [style.width]="(uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div *ngIf="downloadURL | async; let downloadSrc" class="alert alert-info" role="alert">
+            File uploaded: <a [href]="downloadSrc">{{downloadSrc}}</a>
+        </div>
+        <div class="btn-group" role="group" *ngIf="uploadState | async; let state">
+            <button type="button" class="btn btn-primary" (click)="task.pause()"
+                [disabled]="state === 'paused'">Pause</button>
+            <button type="button" class="btn btn-primary" (click)="task.cancel()"
+                [disabled]="!(state === 'paused' || state === 'running')">Cancel</button>
+            <button type="button" class="btn btn-primary" (click)="task.resume()"
+                [disabled]="state === 'running'">Resume</button>
+        </div>
+    </div>
+    <div class="form-group" *ngIf="image">
+        <img [src]="image" class="img-fluid" alt="Responsive image">
+    </div>
+    <button *ngIf="!editStatus" (click)="isAddFirstHomeSlider()" type="button" class="btn btn-success btn-block">Add</button>
+    <button *ngIf="editStatus" (click)="isSaveEditFirstHomeSlider()" type="button" class="btn btn-success btn-block">Save
+        edit</button>
+</form>
+<hr>
+
+<table class="table">
+    <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of adminFirstHomeSlider ; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="isEditFirstHomeSlider(item)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="isDeleteFirstHomeSlider(item)">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

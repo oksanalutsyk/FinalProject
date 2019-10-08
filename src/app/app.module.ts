@@ -12,7 +12,6 @@ import { ComponentsComponent } from './components/components.component';
 import { PagesComponent } from './pages/pages.component';
 import { AdminComponent } from './admin/admin.component';
 import { SharedComponent } from './shared/shared.component';
-import { SmallHeaderComponent } from './components/small-header/small-header.component';
 import { BigHeaderComponent } from './components/big-header/big-header.component';
 import { NewsLetterComponent } from './components/news-letter/news-letter.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -32,7 +31,7 @@ import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
 import { AdminBrendsComponent } from './admin/admin-brends/admin-brends.component';
 import { MobileLoginComponent } from './pages/mobile-login/mobile-login.component';
 import { AdminTextComponent } from './admin/admin-text/admin-text.component';
-
+import { AdminFirstHomeSliderComponent } from './admin/admin-first-home-slider/admin-first-home-slider.component';
 
 import { AdminGuard } from './auth/admin.guard';
 
@@ -42,7 +41,7 @@ import { AdminGuard } from './auth/admin.guard';
 
 import {NgxPaginationModule} from 'ngx-pagination'; 
 import { CarouselModule } from 'ngx-carousels';
-import {NgxUiLoaderModule} from 'ngx-ui-loader'
+import {NgxUiLoaderModule} from 'ngx-ui-loader';
 
 // Pipes
 import { SelectSizePipe } from './shared/pipes/select-size.pipe';
@@ -63,6 +62,7 @@ import { environment } from '../environments/environment';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +70,6 @@ import { environment } from '../environments/environment';
     PagesComponent,
     AdminComponent,
     SharedComponent,
-    SmallHeaderComponent,
     BigHeaderComponent,
     NewsLetterComponent,
     FooterComponent,
@@ -94,6 +93,7 @@ import { environment } from '../environments/environment';
     SelectPricePipe,
     MobileLoginComponent,
     AdminTextComponent,
+    AdminFirstHomeSliderComponent,
 
   ],
   imports: [

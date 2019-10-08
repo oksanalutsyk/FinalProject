@@ -41,7 +41,7 @@
     font-family: "Harmonia";
     font-size: 16px;
     font-weight: 400;
-    padding-left: 12%;
+    padding-left: 13%;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -148,15 +148,15 @@ li {
 }
 
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+/* @media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) { */
     .form-label-group>label {
         display: none;
     }
     .form-label-group input:-ms-input-placeholder {
         color: #777;
     }
-}
+/* } */
 #form1,#form2,#form3{
     color: #46505a;
     font-family: "Harmonia";
@@ -201,7 +201,7 @@ li {
 
 .formAction {
     width: 100%;
-    max-width: 70px;
+    max-width: 6%;
     display: -webkit-box;
     display: flex;
     text-align: right;
@@ -242,8 +242,15 @@ input.ng-touched.ng-valid {
     display: none
 }
 
-
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1300px) {
+    /* .formAction {
+        max-width: 6%;
+    } */
+    .menuText{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width:1050px) {
     .logo {
         display: none
     }
@@ -251,7 +258,7 @@ input.ng-touched.ng-valid {
         display: block
     }
     .formAction {
-        max-width: 1%;
+        max-width: 0px;
     }
     .text-muted{
         text-decoration: none

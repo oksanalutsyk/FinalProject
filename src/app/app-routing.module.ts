@@ -19,7 +19,7 @@ import { AdminBrendsComponent } from './admin/admin-brends/admin-brends.componen
 import { AdminGuard } from './auth/admin.guard';
 import { MobileLoginComponent } from './pages/mobile-login/mobile-login.component';
 import { AdminTextComponent } from './admin/admin-text/admin-text.component';
-
+import { AdminFirstHomeSliderComponent } from './admin/admin-first-home-slider/admin-first-home-slider.component';
 
 
 
@@ -44,6 +44,7 @@ const routes: Routes = [
       { path:'about', component:AdminAboutComponent},
       { path:'brend', component:AdminBrendsComponent},
       { path:'text', component:AdminTextComponent},
+      { path:'firstHomeSlider', component:AdminFirstHomeSliderComponent},
     ]},
     { path:'basket', component:BasketComponent },
 

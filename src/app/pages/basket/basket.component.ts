@@ -17,7 +17,6 @@ export class BasketComponent implements OnInit {
   view: IProduct;
   constructor(private productDetailsService: ProductDetailsService) {
 
-
   }
 
   ngOnInit() {
@@ -55,7 +54,7 @@ export class BasketComponent implements OnInit {
     }
     this.allTotal = total
   }
-// Перезавантаження сторінки
+  // Перезавантаження сторінки
   public refresh(): void {
     window.location.reload();
   }
@@ -70,7 +69,7 @@ export class BasketComponent implements OnInit {
     getClass('.block1').style.display = 'none'
     getClass('.secondTable').style.display = 'none'
     getClass('.block2').style.display = 'block'
-    
+
   }
 
 }

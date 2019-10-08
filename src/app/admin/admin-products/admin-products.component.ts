@@ -189,8 +189,8 @@ export class AdminProductsComponent implements OnInit {
 
   }
 
-  public isDeleteProduct(product: IProduct): void {
-    const id = product.id
+  public isDeleteProduct(item: IProduct): void {
+    const id = item.id
     this.productService.delProducts(id).subscribe(
       () => {
         this.getProducts()
