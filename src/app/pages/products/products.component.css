@@ -92,9 +92,9 @@ width: 100%
     justify-content: space-around;
 }
 .photo{
-    width: 205px;
+    width: 150px;
     height: 290px;
-    margin-left: 2vh;
+    margin-left: 17%;
 }
 .photoZoom{
     width: 8vw;
@@ -217,9 +217,9 @@ display:none;
     display:block;
 }
 .photoHover{
-    width: 150px;
+    width: 100px;
     height: 200px;
-    margin: 10px 0 0 40px;
+    margin: 10px 0 0 63px;
 }
 .nameHover{
     text-align: center;

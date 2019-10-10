@@ -36,8 +36,8 @@ import { AdminFirstHomeSliderComponent } from './admin/admin-first-home-slider/a
 import { AdminGuard } from './auth/admin.guard';
 
 
-
-
+// import { UICarouselModule } from "ui-carousel";
+// import {PageSliderModule}    from 'ng2-page-slider';
 
 import {NgxPaginationModule} from 'ngx-pagination'; 
 import { CarouselModule } from 'ngx-carousels';
@@ -56,6 +56,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
+
 
 
 
@@ -109,7 +110,8 @@ import { environment } from '../environments/environment';
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     NgxPaginationModule,
     CarouselModule,
-    NgxUiLoaderModule
+    NgxUiLoaderModule,
+    // UICarouselModule 
   ],
   providers: [AdminGuard],
   bootstrap: [AppComponent]

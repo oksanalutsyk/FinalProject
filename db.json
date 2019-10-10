@@ -54,7 +54,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fxvynae50ye?alt=media&token=471da61c-6a2a-40af-afd9-3bf5ff9538a2"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Ffqvpodq5fln?alt=media&token=cf0fb42b-66a3-41ed-962b-ed5f9585d634"
     },
     {
       "id": 2,
@@ -93,7 +93,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fgajjvd0iwef?alt=media&token=f8b5bae9-254b-48d3-971a-eb5ed6245ad6"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fvcymd5xwjec?alt=media&token=c9c85d1f-68cd-48bd-b076-66b09db4b814"
     },
     {
       "id": 3,
@@ -127,7 +127,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F1o3nydmrsdc?alt=media&token=f31cb3fb-dade-413e-b645-8acd39db1ddf"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fkevhb3ipgo?alt=media&token=5584c894-201c-46b1-bc02-e0af977f9fc1"
     },
     {
       "id": 4,
@@ -156,7 +156,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F61c75q0dix6?alt=media&token=3307d3bb-24e6-438a-9e09-eb4f17d98ce3"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Feqy9xawe486?alt=media&token=211e780d-31ea-4bbe-bef4-f32844f1dcd6"
     },
     {
       "id": 5,
@@ -195,7 +195,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F9g3hphr0u5?alt=media&token=2001d9d7-796a-40ed-9551-77fc7642fccb"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fvjslfkajel?alt=media&token=13d5ac28-99fc-41b7-9bce-7df7e11e21ff"
     },
     {
       "id": 6,
@@ -317,7 +317,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F1vw62l45fnb?alt=media&token=32636b78-92ed-4565-9fa3-0234f561377f"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fpjjke5zw0t8?alt=media&token=f2b41753-8e7f-4643-b1b7-88774349b6d7"
     },
     {
       "id": 9,
@@ -410,7 +410,7 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fb1shwhrbs5r?alt=media&token=6c79e05d-ece7-472c-b80a-e9fe2c57914d"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fcngur2h31xp?alt=media&token=43937a57-da1c-4b7c-bd07-ba1d4a269292"
     },
     {
       "id": 11,
@@ -449,10 +449,10 @@
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F03xoaxtvyo63?alt=media&token=404eab92-5719-472b-96b4-4985a4567398"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fc3ft69eu9qr?alt=media&token=90308a72-a467-45a3-8d70-f4a7d9c4868b"
     },
     {
-      "id": 12,
+      "id": 13,
       "category": {
         "id": 2,
         "name": "Woman"
@@ -461,34 +461,63 @@
         "id": 3,
         "name": "Puma"
       },
-      "name": "Knit Jumpsuit",
-      "description": "This Time and Tru Jumpsuit will be a great addition to your wardrobe. ",
-      "price": 36,
+      "name": "Skinny Fit Jeans",
+      "description": "Material: Polyester Features: Pleated Sleeve, High Waist, Bohemian and Floral Print.",
+      "price": 234,
       "color": [
+        {
+          "id": 3,
+          "name": "blue",
+          "status": false
+        }
+      ],
+      "size": [
+        {
+          "id": 4,
+          "name": "l",
+          "status": false
+        }
+      ],
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F42tv1iglk74?alt=media&token=e93fe4bb-be9f-4251-9cbf-7744e2563c64"
+    },
+    {
+      "id": 14,
+      "category": {
+        "id": 1,
+        "name": "Man"
+      },
+      "brend": {
+        "id": 4,
+        "name": "NIKE"
+      },
+      "name": "Straight jean.",
+      "description": " Country of Origin: Nicaragua",
+      "price": 34,
+      "color": [
+        {
+          "id": 1,
+          "name": "green",
+          "status": false
+        },
         {
           "id": 2,
           "name": "red",
           "status": false
         },
         {
-          "id": 4,
-          "name": "pink",
+          "id": 3,
+          "name": "blue",
           "status": false
         }
       ],
       "size": [
         {
-          "id": 2,
-          "name": "s",
-          "status": false
-        },
-        {
-          "id": 5,
-          "name": "xl",
+          "id": 3,
+          "name": "m",
           "status": false
         }
       ],
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fywbpxp34sq?alt=media&token=2a6061b2-c56a-4f17-8e61-19c62dac219f"
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fg9hr6r59gsh?alt=media&token=69595b98-5a8e-4ae8-84b3-90ea5dda74a0"
     }
   ],
   "category": [
@@ -676,26 +705,14 @@
   ],
   "firstHomeSlider": [
     {
-      "id": 1,
-      "name": "wesdgvwesdv",
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fmietsb7ozr?alt=media&token=84db6707-331b-46be-b5c7-ca2642c823ed"
+      "id": 5,
+      "name": "11",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fha7omcdmmx?alt=media&token=0a731b0f-0736-402e-a27b-77ae6e8f8af8"
     },
     {
-      "id": 2,
-      "name": "rrr",
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fuuyfa7wxrs?alt=media&token=2b8b0f23-880e-461f-9ae5-cd349b61d419"
-    },
-    {
-      "id": 3,
-      "name": "sfg",
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Ff04nqe6wpob?alt=media&token=d29c8680-b2ae-4702-9503-fa58480b050e"
-    },
-    {
-      "id": 4,
-      "name": "fdbf",
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2F4t3v0ke3nas?alt=media&token=91fb1fa8-bec5-4aa6-8a8d-c7c1be01f5b3"
+      "id": 6,
+      "name": "1112",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fdta6j4xpwzq?alt=media&token=d9b1b7fb-fe16-4a41-8e20-ccfebb538e20"
     }
-  
   ]
-  
 }

@@ -52,7 +52,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration:'enabled'//scroll to top
+  })],
   exports: [RouterModule],
   providers:[AdminGuard]
 })
