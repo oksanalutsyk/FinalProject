@@ -27,7 +27,7 @@
         "id": 1,
         "name": "ZARA"
       },
-      "name": "Signature by Levi Strauss & Co. Mens Skinny Fit Jeans",
+      "name": "Signature by Levi Strauss ",
       "description": "Signature by Levi Strauss & Co.™ Men’s S26 Skinny Fit Jeans offer slim, on-trend style while providing all day comfort. Crafted from premium denim that flexes with you, these Skinny Jeans fit slim through the seat and thigh and are cut extra slim from knee to ankle. Quality you trust from Levi Strauss & Co., est. 1853. Signature by Levi Strauss & Co. \nCountry of Origin:  USA or Imported\n\n",
       "price": 23,
       "color": [
@@ -711,8 +711,13 @@
     },
     {
       "id": 6,
-      "name": "1112",
-      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fdta6j4xpwzq?alt=media&token=d9b1b7fb-fe16-4a41-8e20-ccfebb538e20"
+      "name": "22",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fitgybp3sw1?alt=media&token=0ef99a95-db15-426c-8326-15d35e6f5d2c"
+    },
+    {
+      "id": 7,
+      "name": "vhm",
+      "image": "https://firebasestorage.googleapis.com/v0/b/web-dew-16.appspot.com/o/images%2Fsgaylfe7wsq?alt=media&token=49db6d78-c423-4210-bcf0-42707c624404"
     }
   ]
 }

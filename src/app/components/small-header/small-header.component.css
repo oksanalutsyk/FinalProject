@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.smallHeader {
+    min-height: 10vh;
+    font-family: 'Harmonia';
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e8eb;
+    background-color: #ffffff;
+}
+.smallHead{
+    min-height: 10vh;
+    font-family: 'Harmonia';
+    width: 87%;
+    margin: 0 auto;
+}
+
+.smHeaderIcon {
+    vertical-align: baseline;
+    padding: 0px 6px;
+}
+
+.smPart {
+    display: flex;
+    margin: 0 0 0 18px;
+}
+
+@media screen and (max-width:1020px) {
+    .smPart {
+        display: block;
+    }
+    .col-6 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .smallHead{
+        display: block;
+        width: 100%;
+    }
+    .col-6 {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .smPart {
+        display: block;
+        margin: auto
+    }
+    .icons {
+        margin: auto;
+    }
+}

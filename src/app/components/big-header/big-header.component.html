@@ -32,13 +32,13 @@
                 <form class="form-inline my-2 my-lg-0" ng class="formAction">
 
                     <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}">
-                        <img src="/assets/big-header.images/User_Ico.png" width="19" height="17" alt=""
+                        <img src="/assets/big-header.images/user.svg" width="19" height="17" alt=""
                             data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}" [ngClass]="{'cart': true}">
                         <img src="/assets/big-header.images/Cart_Ico.png" [ngClass]="{'icon': true}" width="19"
-                            height="17" alt="" routerLinkActive="active" routerLink="basket">
-                        <p *ngIf="cart" [ngClass]="{'itemsCount': true}">{{this.productAddToCart.length}}</p>
+                            height="17" alt="" routerLinkActive="active" routerLink="cart">
+                        <p  [ngClass]="{'itemsCount': true}">{{getProductCount}}</p>
 
                     </div>
                 </form>
@@ -161,13 +161,13 @@
                 <form  ng class="formAction">
 
                     <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}">
-                        <img src="/assets/big-header.images/User_Ico.png" width="19" height="17" alt=""
+                        <img src="/assets/big-header.images/user.svg" width="19" height="17" alt=""
                             routerLinkActive="active" routerLink="login">
                     </div>
                     <div class="navbar-brand" href="#" [ngClass]="{'logoIcons': true}" [ngClass]="{'cart': true}">
                         <img src="/assets/big-header.images/Cart_Ico.png" [ngClass]="{'icon': true}" width="19"
                             height="17" alt="" routerLinkActive="active" routerLink="basket">
-                        <p *ngIf="cart" [ngClass]="{'itemsCount': true}">{{this.productAddToCart.length}}</p>
+                        <p *ngIf="cart" [ngClass]="{'itemsCount': true}">{{this.getProductCount}}</p>
 
                     </div>
                 </form>

@@ -61,15 +61,12 @@ export class BasketComponent implements OnInit {
   // Видалення продукту з корзини
   public deleteProduct(i, view): void {
     this.productAddToCart.splice(i, 1);
-    localStorage.setItem('product', JSON.stringify(this.productAddToCart));
+    this.productDetailsService.addProductToCart(this.productAddToCart)
+
   }
   // Очищення корзини
   public deleteCart(): void {
-    localStorage.removeItem('product');
-    getClass('.block1').style.display = 'none'
-    getClass('.secondTable').style.display = 'none'
-    getClass('.block2').style.display = 'block'
-
+    this.productDetailsService.removeAllProductFromCart()
   }
 
 }

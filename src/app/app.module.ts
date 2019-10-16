@@ -32,6 +32,8 @@ import { AdminBrendsComponent } from './admin/admin-brends/admin-brends.componen
 import { MobileLoginComponent } from './pages/mobile-login/mobile-login.component';
 import { AdminTextComponent } from './admin/admin-text/admin-text.component';
 import { AdminFirstHomeSliderComponent } from './admin/admin-first-home-slider/admin-first-home-slider.component';
+import { EmptyCartComponent } from './pages/empty-cart/empty-cart.component';
+import { CartComponent } from './cart/cart.component';
 
 import { AdminGuard } from './auth/admin.guard';
 
@@ -42,6 +44,9 @@ import { AdminGuard } from './auth/admin.guard';
 import {NgxPaginationModule} from 'ngx-pagination'; 
 import { CarouselModule } from 'ngx-carousels';
 import {NgxUiLoaderModule} from 'ngx-ui-loader';
+
+
+import { NguCarouselModule } from '@ngu/carousel';
 
 // Pipes
 import { SelectSizePipe } from './shared/pipes/select-size.pipe';
@@ -95,6 +100,8 @@ import { environment } from '../environments/environment';
     MobileLoginComponent,
     AdminTextComponent,
     AdminFirstHomeSliderComponent,
+    EmptyCartComponent,
+    CartComponent,
 
   ],
   imports: [
@@ -112,6 +119,7 @@ import { environment } from '../environments/environment';
     CarouselModule,
     NgxUiLoaderModule,
     // UICarouselModule 
+    NguCarouselModule
   ],
   providers: [AdminGuard],
   bootstrap: [AppComponent]

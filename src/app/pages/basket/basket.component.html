@@ -31,8 +31,7 @@
                                         </td>
                                         <td> {{view.quantity*view.price}} $</td>
                                         <td>
-                                                <div [ngClass]="{'close': true}" (click)="deleteProduct(i)"
-                                                        (click)="refresh()"></div>
+                                                <div [ngClass]="{'close': true}" (click)="deleteProduct(i)"></div>
                                         </td>
 
                                 </tr>
@@ -41,8 +40,8 @@
                                 </div>
 
                                 <div style="display: flex">
-                                        <button class="btn " [ngClass]="{'makeOrderButton': true}"
-                                                (click)="deleteCart()">MAKE
+                                        <button class="btn " [ngClass]="{'makeOrderButton': true}" (click)="deleteCart()"
+                                        routerLinkActive="active" routerLink="/cart/emptyCart">MAKE
                                                 AN
                                                 ORDER</button>
                                 </div>
@@ -87,7 +86,7 @@
                                                 <div [ngClass]="{'flex': true}">
                                                         <div>Total: {{view.quantity*view.price}} $</div>
                                                         <div [ngClass]="{'close': true}" (click)="deleteProduct(i)"
-                                                                (click)="refresh()"></div>
+                                                                ></div>
                                                 </div>
                                         </td>
                                 </tr>
@@ -105,11 +104,11 @@
                 </table>
         <!-- </div> -->
 
-        <div class="block2">
+        <!-- <div class="block2">
                 <div class="col" [ngClass]="{'office': true}">
                         <div class="col" [ngClass]="{'officeInfo': true}">Thank you for your order</div>
                 </div>
                 <div class="subText">Your order has been placed and is being processed</div>
                 <div class="back" [routerLink]="['/home']">back to homepage</div>
-        </div>
+        </div> -->
 </div>

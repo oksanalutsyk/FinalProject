@@ -1,3 +1,4 @@
+
     .container-fluid {
         padding: 10vh 3vw 4vh 5vw;
         ;
@@ -63,11 +64,16 @@
         line-height: 30px;
         margin-bottom: 2%;
     }
+    .pay{
+       display: flex;
+       justify-content: space-between;
+
+    }
     
     .footerMenuList {
         color: #28313b;
         font-family: "Harmonia";
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 30px;
         width: 585px;
@@ -97,9 +103,10 @@
     .footerIcons{
         display: flex;
         justify-content: space-between;
+        width: 80%;
         
     }
-    
+  
     @media screen and (max-width:1020px) {
         .footer{
             display: block

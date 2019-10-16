@@ -20,42 +20,53 @@ import { AdminGuard } from './auth/admin.guard';
 import { MobileLoginComponent } from './pages/mobile-login/mobile-login.component';
 import { AdminTextComponent } from './admin/admin-text/admin-text.component';
 import { AdminFirstHomeSliderComponent } from './admin/admin-first-home-slider/admin-first-home-slider.component';
+import { EmptyCartComponent } from './pages/empty-cart/empty-cart.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
 
 
 const routes: Routes = [
-  { path:'', redirectTo:'/home', pathMatch:'full'},
-  { path:'home', component:HomeComponent},
-  { path:'products', component:ProductsComponent},
-  { path:'products/:id', component:ProductDetailsComponent},
-  { path:'about', component:AboutComponent},
-  { path:'contact', component:ContactComponent},
-  { path:'login', component:MobileLoginComponent},
-  { path:'admin', component:AdminComponent, canActivate:[AdminGuard], children:[
-    { path:'', redirectTo:'category', pathMatch:'full'},
-      { path:'products', component:AdminProductsComponent },
-      { path:'category', component:AdminCategoryComponent },
-      { path:'color', component:AdminColorComponent },
-      { path:'size', component:AdminSizeComponent },
-      { path:'message', component:AdminMessageComponent },
-      { path:'email', component:AdminEmailComponent },
-      { path:'about', component:AdminAboutComponent},
-      { path:'brend', component:AdminBrendsComponent},
-      { path:'text', component:AdminTextComponent},
-      { path:'firstHomeSlider', component:AdminFirstHomeSliderComponent},
-    ]},
-    { path:'basket', component:BasketComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'products/:id', component: ProductDetailsComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'login', component: MobileLoginComponent },
+  {
+    path: 'admin', component: AdminComponent, canActivate: [AdminGuard], children: [
+      { path: '', redirectTo: 'category', pathMatch: 'full' },
+      { path: 'products', component: AdminProductsComponent },
+      { path: 'category', component: AdminCategoryComponent },
+      { path: 'color', component: AdminColorComponent },
+      { path: 'size', component: AdminSizeComponent },
+      { path: 'message', component: AdminMessageComponent },
+      { path: 'email', component: AdminEmailComponent },
+      { path: 'about', component: AdminAboutComponent },
+      { path: 'brend', component: AdminBrendsComponent },
+      { path: 'text', component: AdminTextComponent },
+      { path: 'firstHomeSlider', component: AdminFirstHomeSliderComponent },
+    ]
+  },
+  {
+    path: 'cart', component: CartComponent, children: [
+      { path: '', redirectTo: 'basket', pathMatch: 'full' },
+      { path: 'emptyCart', component: EmptyCartComponent },
+      { path: 'basket', component: BasketComponent },
+    ]
+  },
 
-  { path:'**', redirectTo:'/home'},
+
+  { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration:'enabled'//scroll to top
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled'//scroll to top
   })],
   exports: [RouterModule],
-  providers:[AdminGuard]
+  providers: [AdminGuard]
 })
 export class AppRoutingModule { }

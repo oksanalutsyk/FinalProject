@@ -1,16 +1,33 @@
 <div class="container-fluid">
     <div [ngClass]="{'bigSlider': true}">
 
-      
-        
-        <div [textContent]="dataEvent"></div>
-        <!-- <a [routerLink]="['/new-page']">go to new page</a> -->
 
+        <!-- #1 -->
+        <div [textContent]="dataEvent"></div>
         <ngb-carousel *ngIf="photos" (slide)="onSlide($event)">
             <ng-template *ngFor="let item of photos; let i = index" ngbSlide [id]="'slideId_' + i">
-                <img [src]="item.image" alt="Random slide">
+                <div>
+                    <img [src]="item.image" alt="Random slide" class="d-block w-100">
+                </div>
             </ng-template>
         </ngb-carousel>
+
+
+        <!-- <h1>Reset</h1>
+        <div><label><input type="checkbox" [(ngModel)]="resetAnim">With Animation</label></div>
+        <button (click)="reset()">reset</button>
+        
+        <div>
+            <h1>Move to slide</h1>
+            <select [(ngModel)]="slideNo">
+          <option *ngFor="let j of myCarousel.pointNumbers" [value]="j">{{j + 1}}</option>
+        </select>
+            <div><label><input type="checkbox" [(ngModel)]="withAnim">With Animation</label></div>
+            <button (click)="moveTo(slideNo)">move to {{+slideNo + 1}}</button>
+        </div> -->
+
+
+
 
         <!-- <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel"> -->
         <!-- Індикатори слайдів -->
@@ -73,17 +90,49 @@
     <div [ngClass]="{'someProductsSlider': true}">
         <div [ngClass]="{'newArrivals': true}">
             <p [ngClass]="{'new': true}"> <span [ngClass]="{'orangeNew': true}">NEW</span> ARRIVALS</p>
-            <!-- <p [ngClass]="{'loremText': true}">Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            </p> -->
             <p [ngClass]="{'loremText': true}" *ngFor="let item of adminText">{{item.newArrivals}}
             </p>
 
         </div>
 
 
+        <div class="bigBox">
+            <div class="smallBlock" *ngFor="let product of img" [routerLink]="['/products', product.id]">
+                <div class="block1">
+                    <img [src]="product.image" class="photo">
+                    <p class="name">{{product.name}}</p>
+                    <p class="price">{{product.price}}$</p>
+                </div>
+                <div class="block">
+                    <img [src]="product.image" class="photoHover">
+                    <p class="nameHover">{{product.name}}</p>
+                    <div class="sizeHover">Sizes:
+                        <div *ngFor="let size of product.size" [ngClass]="{'divSize': true}"> {{size.name}}
+                        </div>
+                    </div>
+                    <div class="sizeHover">Brend:
+                        <div [ngClass]="{'divSize': true}"> {{product.brend.name}}
+                        </div>
+                    </div>
+                    <div class="sizeHover">Category:
+                        <div [ngClass]="{'divSize': true}"> {{product.category.name}}
+                        </div>
+                    </div>
+                    <div [ngClass]="{'colorHover': true}">
+                        <div *ngFor="let color of product.color ; let i=index" [ngClass]="{'divColor': true}"
+                            [ngStyle]="{'backgroundColor': color.name}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-12 justify-content-center">
+            <pagination-controls class="my-pagination" (pageChange)="p = $event">
+            </pagination-controls>
+        </div> -->
         <!-- Carousel -->
         <!-- #1 -->
-        <rotate-carousel height="100px" width="290px" depth="600px" period="2.5s" direction="reverse"
+        <!-- <rotate-carousel height="100px" width="290px" depth="600px" period="2.5s" direction="reverse"
             [ngClass]="{'slider2': true}">
             <ng-template rotateCarouselItem>
                 <div class="smallBlock" [routerLink]="['/products', img1.id]">
@@ -137,10 +186,10 @@
                 </div>
             </ng-template>
 
-        </rotate-carousel>
+        </rotate-carousel> -->
 
         <!-- #2 -->
-        <div *ngIf='img5'>
+        <!-- <div *ngIf='img5'>
 
             <rotate-carousel height="100px" width="290px" depth="175px" period="2.5s" direction="reverse"
                 [ngClass]="{'slider3': true}">
@@ -196,6 +245,6 @@
                     </div>
                 </ng-template>
             </rotate-carousel>
-        </div>
+        </div> -->
     </div>
 </div>

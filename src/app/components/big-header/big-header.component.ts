@@ -53,6 +53,10 @@ export class BigHeaderComponent implements OnInit {
 
 
   }
+
+  public get getProductCount(){
+    return this.productDetailsService.products.length
+  }
   // Кількість товарів в корзині
   public showCount(): void {
     if (this.productAddToCart) {

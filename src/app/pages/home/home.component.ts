@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ProductServices } from 'src/app/shared/services/product-services';
 import { FirstHomeSliderService } from 'src/app/shared/services/first-home-slider.service';
 import { TextService } from 'src/app/shared/services/text.service';
@@ -12,6 +12,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IFirstHomeSlider } from 'src/app/shared/interfaces/firstHomeSlider.interface';
+import { NguCarouselConfig } from '@ngu/carousel';
+import { NguCarousel, NguCarouselStore } from '@ngu/carousel';
 
 
 @Component({
@@ -42,7 +44,7 @@ export class HomeComponent implements OnInit {
 
   dataEvent: string;
 
-  public imagesUrl:Array<IProduct>
+  // public imagesUrl:Array<IProduct>
 
   constructor(private productService: ProductServices,private firstHomeSliderService: FirstHomeSliderService, private textService: TextService, private route: ActivatedRoute) {
     this.getProducts();
@@ -52,8 +54,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.imagesUrl = this.products
-    console.log(this.imagesUrl)
+    // this.imagesUrl = this.products
+    // console.log(this.imagesUrl)
+
+
+
+
+    
   }
 
 
@@ -93,7 +100,7 @@ export class HomeComponent implements OnInit {
       data => {
         this.products = data;
 
-        this.img = this.products.slice(-5);
+        this.img = this.products.slice(-4);
   console.log(this.img)
 
         this.img1 = this.products.slice(-5)[0];

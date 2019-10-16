@@ -38,10 +38,9 @@ margin: 0 0 6vh 0;
 
 }
 .basketImg{
-    height: 100px;
-    width: 80px;
-    margin-right: 20%;
-
+    height: 170px;
+    width: 85px;
+    margin-right: 10%;
 }
 table{
     color: #3c4751;
@@ -112,10 +111,10 @@ text-align: center
 }
 
 .close {
-    width: 32px;
     height: 32px;
     opacity: 0.3;
     color: red;
+    margin-left: 85px;
     }
     .close:hover {
     opacity: 1;

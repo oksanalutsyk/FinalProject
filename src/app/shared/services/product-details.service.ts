@@ -11,8 +11,13 @@ export class ProductDetailsService {
 
   private url: string;
 
+  private _products:IProduct[]
+  public  get products(){
+    return this._products || []
+  }
+
   constructor(private http: HttpClient) {
-    this.url = 'http://localhost:3000/products'
+    this.url = 'http://localhost:3000/products';
   }
 
   public getProductDetails(id: number): Observable<IProduct> {
@@ -25,14 +30,25 @@ export class ProductDetailsService {
   }
 
   // Cart
-  public addProductToCart(view: IProduct) {
+  public addProductToCart(view: IProduct[]) {
     localStorage.setItem('product', JSON.stringify(view))
+    this._products = view
+ 
   }
   public getProductFromCart() {
-    return JSON.parse(localStorage.getItem('product'))
+    let result = []
+    let json = localStorage.getItem('product')
+    if (json){
+      result = JSON.parse(json)
+    }
+    
+    this._products=result
+    return result;
   }
   public removeAllProductFromCart() {
+    this._products = []
     return localStorage.removeItem('product')
+
   }
 
 }

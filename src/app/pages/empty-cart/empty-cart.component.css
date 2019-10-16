@@ -1,0 +1,35 @@
+.office{
+    min-height: 10vh;
+    border: 1px solid #e6e8eb;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 0
+}
+.officeInfo{
+    color: #ff5912;
+    font-family: "HarmoniaSansProCyr-SemiBd";
+    font-size: 35px;
+    letter-spacing: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2; 
+    text-align: center
+}
+.subText{
+    color: #3c4751;
+font-family: "Harmonia";
+font-size: 23px;
+text-align: center
+}
+.back{
+color: #3c4751;
+font-family: "Harmonia";
+font-size: 18px;
+text-decoration: underline;
+text-align: center
+}
+.back:hover{
+color: #ff5912
+}

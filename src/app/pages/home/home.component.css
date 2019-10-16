@@ -4,6 +4,8 @@
     box-sizing: border-box
 }
 
+
+
 .container-fluid {
     background-color: #f4f6f8;
     min-height: 30vh;
@@ -14,12 +16,12 @@
     min-height: 5vh;
 }
 .someProductsSlider{
-    min-height: 100vh
+    min-height: 1vh
 
 }
 .newArrivals{
     text-align: center;
-    padding: 8vh 0 30vh 0;
+    padding: 10vh 0;
     
 }
 .new{
@@ -98,12 +100,13 @@ line-height: 29.97px;
 padding: 0 0 1vh 0
 }
 .price{
-display: flex;
-justify-content: space-between;
-width:  230px;
-padding: 1vh 0;
-align-items: center;
-}
+    color: #ff5912;
+    font-family: "Harmonia";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    
+    }
 .dolar{
     color: #34404b;
     font-family: "HarmoniaSansProCyr-SemiBd";
@@ -194,16 +197,16 @@ width: 100%
 }
 .bigBox{
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .photo{
-    width: 205px;
+    width: 150px;
     height: 290px;
-    margin-left: 10px;
+    margin-left: 17%;
 }
 .photoZoom{
     width: 8vw;
@@ -324,9 +327,9 @@ display:none;
     display:block;
 }
 .photoHover{
-    width: 150px;
+    width: 100px;
     height: 200px;
-    margin: 10px 0 0 40px;
+    margin: 10px 0 0 63px;
 }
 .nameHover{
     text-align: center;
@@ -358,6 +361,7 @@ font-family: "Harmonia";
 font-size: 14px;
 font-weight: 400;
 padding: 1vh 0;
+
 
 }
 .productIcons{
