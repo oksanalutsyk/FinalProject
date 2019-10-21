@@ -1,7 +1,5 @@
-
-    .container-fluid {
+.container-fluid {
         padding: 10vh 3vw 4vh 5vw;
-        ;
         background-color: #ffffff;
         min-height: 15vh;
         max-width: 85%;
@@ -111,11 +109,15 @@
         .footer{
             display: block
         }
-        .block1, .block2{
+        .block1{
             width: 100%;
             margin: auto;
             text-align: center
-
+        }
+        .block2{
+            width: 19%;
+            margin: auto;
+            text-align: center
         }
         .smallLogoText{
             left: 50px;
@@ -125,7 +127,8 @@
             margin-left: 14%;
         } 
          .footerMenuList{
-             display: flex
+             display: flex;
+             margin: auto;
          }
          .paymentMethods{
              margin:auto
@@ -134,23 +137,25 @@
              text-align: center;
              margin-top: 5px
          }
+         .footerIcons{
+            width: 200px;
+            margin: auto;
+         }
     }
 
 
     @media screen and (max-width:768px){
-        .menuList{
-         display: block;
-         /* padding-left: 10vw; */
+        .footerMenuList{
+    display: block;
+    margin: 0 auto;
+    width: 305px;
         }
         .ul{
-            width: 40%;
+            width: 64%;
             margin: auto
         }
-    }
-    @media screen and (max-width:600px){
-        .menuList{
-         /* padding-left: 18vw; */
-         margin-left: 3vw;
+        .block2{
+            display: none;
         }
     }
 

@@ -50,8 +50,6 @@ export class BigHeaderComponent implements OnInit {
   ngOnInit() {
     this.getRegistration()//виклик методу
 
-
-
   }
 
   public get getProductCount(){

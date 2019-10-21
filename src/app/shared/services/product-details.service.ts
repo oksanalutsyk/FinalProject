@@ -35,6 +35,7 @@ export class ProductDetailsService {
     this._products = view
  
   }
+  
   public getProductFromCart() {
     let result = []
     let json = localStorage.getItem('product')

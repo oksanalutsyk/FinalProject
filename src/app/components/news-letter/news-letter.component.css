@@ -48,6 +48,13 @@ font-family: "Harmonia";
 font-size: 15px;
 font-style: italic;
 }
+.typeEmail2:hover{
+    border-color: #ff5912;
+}
+input{
+width: 15vw;
+margin: 0 30px 0 10px;
+}
 .btnJoinUs{
     background-color: #ff5912;
     font-size: 14px;
@@ -60,17 +67,15 @@ font-style: italic;
     align-items: center;
 }
 .btnJoinUsText{
-    color: #ffffff;
-    font-family: "HarmoniaSansProCyr-SemiBd";
-    
+     margin-left: 2%;
 }
 
 
-/* Modal */
 .form{
-    padding: 3vh 4vh;
-    color: #46505a;
     font-family: "Harmonia";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .textarea{
     margin-top: 3vh;
@@ -79,7 +84,15 @@ font-style: italic;
 .btnSendMessText{
     color: #ffffff;
     background-color: #ff5912;
-    margin-top: 10px
+    margin-top: 10px;
+    align-items: center;
+    font-weight: 400;
+    width: 75px;
+    height: 45px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+
 }
 input.ng-touched.ng-invalid {
     border: solid red 2px;
@@ -101,21 +114,35 @@ input.ng-touched.ng-valid {
        width: inherit;
       display:flex;
       justify-content: space-between;
+      width: 45%;
    }
 }
 
 @media screen and (max-width:768px){
     .newRight{
         display: block;
+        width: 100%;
+    }
+    .smHeaderIcon{
+        display: none;
     }
     .btnJoinUs{
         margin: auto
     }
     
     .letter{
-        display: flex;
-        justify-content: center;
-        padding: 3px 0
+        display:block;
+        width: 100%;
+    }
+    .form{
+        display: block;
+        width: 100%;
+    }
+    input{
+        width: 95%;
+    }
+    .btnSendMessText{
+        margin: 10px auto;
     }
     
 }
