@@ -92,9 +92,9 @@ width: 100%
     justify-content: space-around;
 }
 .photo{
-    width: 150px;
+    width: 140px;
     height: 290px;
-    margin-left: 17%;
+    margin-left: 20%;
 }
 .photoZoom{
     width: 8vw;
