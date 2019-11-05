@@ -62,11 +62,14 @@ export class BasketComponent implements OnInit {
   public deleteProduct(i, view): void {
     this.productAddToCart.splice(i, 1);
     this.productDetailsService.addProductToCart(this.productAddToCart)
+    this.calculateAllTotal(this.productAddToCart)
+
 
   }
   // Очищення корзини
   public deleteCart(): void {
     this.productDetailsService.removeAllProductFromCart()
+    
   }
 
 }

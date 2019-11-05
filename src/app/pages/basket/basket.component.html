@@ -13,7 +13,7 @@
                         </thead>
                         <tbody>
                                 <tr *ngFor="let view of productAddToCart; let i=index">
-                                        <td [ngClass]="{'name': true}" [routerLink]="['/products', view.id]">
+                                        <td [ngClass]="{'name': true}">
                                                 <img [src]="view.image" [ngClass]="{'basketImg': true}" alt="">
                                                 {{view.name}}</td>
                                         <td>{{view.price}} $</td>
