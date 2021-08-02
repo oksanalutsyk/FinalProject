@@ -190,7 +190,7 @@ export class BigHeaderComponent implements OnInit {
 
 
   //Зміна вікон
-  public signUpClose(form: NgForm): void {
+  public signUpClose(): void {
     let check2 = true;
     if (check2) {
       getId('form1').style.display = 'none'
@@ -204,7 +204,7 @@ export class BigHeaderComponent implements OnInit {
   }
 
 
-  public signInClose(form: NgForm): void {
+  public signInClose(): void {
     let check = true;
     if (check) {
       getId('form2').style.display = 'none'
@@ -228,6 +228,7 @@ export class BigHeaderComponent implements OnInit {
       check = false
     }
   }
+  
 }
 
 let getId = x => document.getElementById(x)

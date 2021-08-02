@@ -26,4 +26,20 @@ p{
 }
 a{
     cursor: pointer;
+    color: black;
+    &:hover {
+        text-decoration: none;
+        color: black;
+
+    }
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.main-content {
+    margin: 0 50px;
 }
