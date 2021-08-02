@@ -44,7 +44,9 @@ export class AdminProductsComponent implements OnInit {
   task: AngularFireUploadTask;
   uploadState: Observable<string>;
   uploadProgress: Observable<number>;
-  downloadUrl: Observable<string>;
+  // downloadUrl: Observable<string>;
+  downloadUrl: any;
+
   image: string = null;
 
   someColor: Array<any> = []

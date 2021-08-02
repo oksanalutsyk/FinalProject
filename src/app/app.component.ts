@@ -9,6 +9,9 @@ import { NgxUiLoaderService} from 'ngx-ui-loader';
 })
 export class AppComponent {
   title = 'final-project';
+  
+  // TODO
+  isShow = false
 
 
   constructor(private ngxService: NgxUiLoaderService, private router: Router) { }

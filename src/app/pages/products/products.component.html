@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="bigBox">
                     <div class="smallBlock"
-                        *ngFor="let product of products |selectPrice: minValue:maxValue |selectSize:selectedSizes |selectCategory:selectedCategories |selectBrend:selectedBrendes | paginate: { itemsPerPage: 9, currentPage: p }"
+                        *ngFor="let product of products |selectPrice: minValue:maxValue |selectSize:selectedSizes |selectCategory:selectedCategories |selectBrend:selectedBrendes "
                         [routerLink]="['/products', product.id]">
                         <div class="block1">
                             <img [src]="product.image" class="photo">
@@ -97,8 +97,8 @@
 
             </div>
             <div class="col-12 justify-content-center">
-                <pagination-controls class="my-pagination" (pageChange)="p = $event" (click)="gotoTop() ">
-                </pagination-controls>
+                <!-- <pagination-controls class="my-pagination" (pageChange)="p = $event" (click)="gotoTop() ">
+                </pagination-controls> -->
             </div>
         </div>
     </div>
