@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { AdminTextComponent } from './admin-text.component';
 
@@ -6,7 +6,7 @@ describe('AdminTextComponent', () => {
   let component: AdminTextComponent;
   let fixture: ComponentFixture<AdminTextComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ AdminTextComponent ]
     })

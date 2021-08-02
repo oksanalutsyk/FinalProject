@@ -64,8 +64,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled'//scroll to top
-  })],
+    scrollPositionRestoration: 'enabled' //scroll to top
+    ,
+    relativeLinkResolution: 'legacy'
+})],
   exports: [RouterModule],
   providers: [AdminGuard]
 })
