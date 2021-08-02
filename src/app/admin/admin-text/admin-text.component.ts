@@ -6,7 +6,7 @@ import { NewText } from 'src/app/shared/classes/new-text.class';
 @Component({
   selector: 'app-admin-text',
   templateUrl: './admin-text.component.html',
-  styleUrls: ['./admin-text.component.css']
+  styleUrls: ['./admin-text.component.scss']
 })
 export class AdminTextComponent implements OnInit {
 

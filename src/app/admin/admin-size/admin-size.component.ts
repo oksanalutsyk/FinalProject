@@ -8,7 +8,7 @@ import { NewSize } from 'src/app/shared/classes/new-size.class';
 @Component({
   selector: 'app-admin-size',
   templateUrl: './admin-size.component.html',
-  styleUrls: ['./admin-size.component.css']
+  styleUrls: ['./admin-size.component.scss']
 })
 export class AdminSizeComponent implements OnInit {
   adminSize: Array<ISize> = []

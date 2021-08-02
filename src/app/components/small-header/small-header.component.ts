@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-small-header',
   templateUrl: './small-header.component.html',
-  styleUrls: ['./small-header.component.css']
+  styleUrls: ['./small-header.component.scss']
 })
 export class SmallHeaderComponent implements OnInit {
   flex:any = "flex"

@@ -17,7 +17,7 @@ import { IBrend } from 'src/app/shared/interfaces/brends.interface';
 @Component({
   selector: 'app-admin-products',
   templateUrl: './admin-products.component.html',
-  styleUrls: ['./admin-products.component.css'],
+  styleUrls: ['./admin-products.component.scss'],
   providers: [ProductServices, CategoryService, ColorServices, SizeServices, BrendsService]
 
 })

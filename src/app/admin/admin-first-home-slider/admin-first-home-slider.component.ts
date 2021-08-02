@@ -9,7 +9,7 @@ import { NewFirstHomeSlider } from 'src/app/shared/classes/new-firstHomeSlider.c
 @Component({
   selector: 'app-admin-first-home-slider',
   templateUrl: './admin-first-home-slider.component.html',
-  styleUrls: ['./admin-first-home-slider.component.css']
+  styleUrls: ['./admin-first-home-slider.component.scss']
 })
 export class AdminFirstHomeSliderComponent implements OnInit {
   adminFirstHomeSlider: Array<IFirstHomeSlider> = [];

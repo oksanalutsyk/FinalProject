@@ -8,7 +8,7 @@ import { NewColor } from 'src/app/shared/classes/new-color.class';
 @Component({
   selector: 'app-admin-color',
   templateUrl: './admin-color.component.html',
-  styleUrls: ['./admin-color.component.css']
+  styleUrls: ['./admin-color.component.scss']
 })
 export class AdminColorComponent implements OnInit {
   adminColor: Array<IColor> = []

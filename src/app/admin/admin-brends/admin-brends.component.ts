@@ -9,7 +9,7 @@ import { NewBrend } from 'src/app/shared/classes/new-brend.class';
 @Component({
   selector: 'app-admin-brends',
   templateUrl: './admin-brends.component.html',
-  styleUrls: ['./admin-brends.component.css']
+  styleUrls: ['./admin-brends.component.scss']
 })
 export class AdminBrendsComponent implements OnInit {
   adminBrend: Array<IBrend> = []

@@ -8,7 +8,7 @@ import { IProduct } from 'src/app/shared/interfaces/product.interface';
 @Component({
   selector: 'app-admin-category',
   templateUrl: './admin-category.component.html',
-  styleUrls: ['./admin-category.component.css']
+  styleUrls: ['./admin-category.component.scss']
 })
 export class AdminCategoryComponent implements OnInit {
 

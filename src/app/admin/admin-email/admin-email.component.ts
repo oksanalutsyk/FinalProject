@@ -5,7 +5,7 @@ import { IEmail } from 'src/app/shared/interfaces/email.interface';
 @Component({
   selector: 'app-admin-email',
   templateUrl: './admin-email.component.html',
-  styleUrls: ['./admin-email.component.css']
+  styleUrls: ['./admin-email.component.scss']
 })
 export class AdminEmailComponent implements OnInit {
   adminEmail: Array<IEmail> = []

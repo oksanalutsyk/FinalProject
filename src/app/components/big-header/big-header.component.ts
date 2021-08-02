@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-big-header',
   templateUrl: './big-header.component.html',
-  styleUrls: ['./big-header.component.css']
+  styleUrls: ['./big-header.component.scss']
 
 })
 export class BigHeaderComponent implements OnInit {

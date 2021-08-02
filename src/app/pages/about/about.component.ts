@@ -7,7 +7,7 @@ import { IText } from 'src/app/shared/interfaces/text.interface';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.scss'],
   styles: [`
     ngb-progressbar {
       margin-top: 5rem;

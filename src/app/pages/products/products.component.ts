@@ -15,7 +15,7 @@ import { ICategory } from 'src/app/shared/interfaces/category.interface';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
+  styleUrls: ['./products.component.scss'],
   providers: [ProductServices, SizeServices]
 
 })

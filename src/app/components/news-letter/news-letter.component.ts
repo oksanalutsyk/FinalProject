@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-news-letter',
   templateUrl: './news-letter.component.html',
-  styleUrls: ['./news-letter.component.css']
+  styleUrls: ['./news-letter.component.scss']
 })
 export class NewsLetterComponent implements OnInit {
   flex: any = "flex"
